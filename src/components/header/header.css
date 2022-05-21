@@ -1,0 +1,33 @@
+.headerSection {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Flag {
+  margin-left: 80%;
+  margin-top: 10px;
+}
+.headerSection label {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.headerSectionMedia {
+  display: none;
+}
+
+/* Media section */
+@media only screen and (max-width: 900px) {
+  .headerSectionMedia {
+    display: block;
+    text-align: center;
+  }
+  .headerSectionMedia label {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .headerSection {
+    display: none;
+  }
+}
