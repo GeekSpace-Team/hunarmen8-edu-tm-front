@@ -1,0 +1,21 @@
+.professia {
+  margin-top: 50px;
+}
+.professiaTitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.professiaTypeButton button {
+  background: #007632;
+  color: white;
+  width: 150px;
+  height: 35px;
+  border: #007632;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

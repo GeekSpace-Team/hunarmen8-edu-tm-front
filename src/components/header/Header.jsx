@@ -24,6 +24,10 @@ const Header = () => {
 
       {/* Media Section */}
       <div className="headerSectionMedia">
+        <Stack direction="column" spacing={1} className="FlagMedia">
+          <img src="./image/RuFlag.svg" alt="#" />
+          <img src="./image/TmFlag.svg" alt="#" />
+        </Stack>
         <Stack direction={"column"} alignItems="center" spacing={3}>
           <img src="./image/Gerb.svg" style={{ width: "100px" }} alt="#" />
           <label>

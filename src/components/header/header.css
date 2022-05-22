@@ -23,6 +23,15 @@
     display: block;
     text-align: center;
   }
+  .Flag img {
+    display: none;
+  }
+  .FlagMedia img {
+    width: 50px;
+  }
+  .FlagMedia {
+    margin-left: 90%;
+  }
   .headerSectionMedia label {
     text-transform: uppercase;
     font-weight: 600;
