@@ -1,8 +1,16 @@
 .footer {
   background: #007632;
-  height: 230px;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 30px;
+}
+.footerText {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.phoneNumbersFooter {
+  color: #fff;
+  text-decoration: none;
 }

@@ -1,6 +1,10 @@
 .comeToLearn {
   margin-top: 70px;
 }
+
+.comeToLearnImg {
+  height: 320px;
+}
 .comeTitle {
   text-align: center;
   text-transform: uppercase;
@@ -11,4 +15,13 @@
 h3 {
   text-transform: uppercase;
   font-weight: 900;
+}
+
+@media only screen and (max-width: 768px) {
+  .professiaImg {
+    height: 400px;
+  }
+  .comeTitle {
+    font-size: 25px;
+  }
 }

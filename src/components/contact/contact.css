@@ -1,0 +1,26 @@
+.contact {
+  margin-top: 300px;
+  margin-bottom: 50px;
+}
+
+.phoneNumbers {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 5px;
+}
+.forContact {
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .forContact {
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    margin-bottom: -30px;
+  }
+}
