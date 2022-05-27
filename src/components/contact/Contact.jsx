@@ -1,8 +1,21 @@
 import { Container, Grid, Stack } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
+import { i18n } from "../../Language/LangConfig";
 import "./contact.css";
 
 const Contact = () => {
+  const { t } = useTranslation();
+  useEffect(() => {
+    let l = localStorage.getItem("lang");
+    // nodeRef = {nodeRef}
+    if (l != null && typeof l !== "undefined") {
+      i18n.changeLanguage(l);
+    } else {
+      i18n.changeLanguage("ru");
+    }
+  }, []);
   return (
     <div className="contact">
       <Container maxWidth="lg">
@@ -11,15 +24,15 @@ const Contact = () => {
             <Grid item lg={12} md={12} xs={12} sm={12} mb={3}>
               <Stack direction="row" spacing={3}>
                 <p>
-                  <b>Salgysy: </b>
+                  <b>{t("adress")} </b>
                 </p>
-                <p>Ashgabat saheri, Gorogly kochesi, 91(20)</p>
+                <p>{t("addres")}</p>
               </Stack>
             </Grid>
             <Grid item lg={12} md={12} sm={12} xs={12} mt={7}>
               <Stack direction="row" spacing={3}>
                 <p>
-                  <b>Telefon belgisi:</b>
+                  <b>{t("phone")}</b>
                 </p>
                 <a
                   href="tel:+99312 92 73 08"
@@ -43,7 +56,7 @@ const Contact = () => {
             <Grid item lg={12} md={12} sm={12} xs={12} mt={5}>
               <Stack direction="row" spacing={3}>
                 <p>
-                  <b>Elektron pocta:</b>
+                  <b>{t("mail")}</b>
                 </p>
                 <a href="bhom8@mail.ru" className="phoneNumbers">
                   bhom8@mail.ru
@@ -53,7 +66,7 @@ const Contact = () => {
           </Grid>
           <Grid item lg={6} md={6} xs={12} sm={12} mt={-15}>
             <Grid item lg={12} md={12} sm={12} xs={12} pb={5}>
-              <span className="forContact">Habarlasmak uchin</span>
+              <span className="forContact">{t("forContact")}</span>
             </Grid>
             <iframe
               src="https://yandex.ru/map-widget/v1/-/CCUJIGBjwC"
@@ -70,10 +83,7 @@ const Contact = () => {
         <Grid item lg={12} md={12} xs={12} sm={12} mt={10} textAlign="center">
           <Stack direction="column" spacing={2}>
             <p>
-              <b>
-                Bizin mekdebimizin yanyndaky teke bazar awtobus duralgasyna
-                gelyan awtobuslar:
-              </b>
+              <b>{t("busDirection")}</b>
             </p>
             <span>
               № 6,8,10,13,14,15,16,21,22,23,26,30,38,40,49,50,51,56,58,61,62,63

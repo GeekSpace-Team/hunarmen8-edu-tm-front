@@ -1,17 +1,30 @@
 import { Grid, Stack } from "@mui/material";
 import { Container } from "@mui/system";
-import React from "react";
+import React, { useEffect } from "react";
 import "./comeToLearn.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import img1 from "../../img/img1.JPG";
 import img2 from "../../img/img2.jpg";
 import img3 from "../../img/img3.jpg";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
+import { i18n } from "../../Language/LangConfig";
 
 const ComeToLearn = () => {
+  const { t } = useTranslation();
+  useEffect(() => {
+    let l = localStorage.getItem("lang");
+    // nodeRef = {nodeRef}
+    if (l != null && typeof l !== "undefined") {
+      i18n.changeLanguage(l);
+    } else {
+      i18n.changeLanguage("ru");
+    }
+  }, []);
   return (
     <div className="comeToLearn">
-      <p className="comeTitle">bize okamaga gelin!</p>
+      <p className="comeTitle">{t("okamaGel")}</p>
       <Container maxWidth="lg">
         <Grid container spacing={5}>
           <Grid item lg={6} md={6} xs={12} sm={12}>
@@ -37,9 +50,7 @@ const ComeToLearn = () => {
           </Grid>
           <Grid item lg={6} md={6} xs={12} sm={12}>
             <Stack>
-              <h3 style={{ marginTop: "-40px" }}>
-                okuwlaryn gunduzki we agsamky bolumleri bar
-              </h3>
+              <h3 style={{ marginTop: "-40px" }}>{t("gijeki")}</h3>
               <span
                 style={{
                   marginTop: "20px",
@@ -47,27 +58,23 @@ const ComeToLearn = () => {
                   marginBottom: "30px",
                 }}
               >
-                Resminamalar iyul ayynyn 01-den awgust ayynyn 28-ne cenli irden
-                8<sup>00</sup>-dan 18<sup>00</sup> cenli kabul edilyar.
+                {t("resmi")}8<sup>00</sup>
+                {t("dan")} 18<sup>00</sup> {t("namalar")}
               </span>
-              <p style={{ marginBottom: "20px" }}>Gerekli resminamalar:</p>
+              <p style={{ marginBottom: "20px" }}>{t("resminamaSanaw")}</p>
               <Stack spacing={2}>
                 <ul style={{ marginLeft: "7%" }}>
-                  <li>passportyn nusgasy</li>
+                  <li>{t("list1")}</li>
+                  <li style={{ marginTop: "3px" }}>{t("list2")}</li>
+                  <li style={{ marginTop: "3px" }}>{t("list3")}</li>
+                  <li style={{ marginTop: "3px" }}>{t("list4")}</li>
                   <li style={{ marginTop: "3px" }}>
-                    orta bilim hakyndaky attestat we onun nusgasy
+                    {t("list5a")} {t("list5b")}
                   </li>
+                  <li style={{ marginTop: "3px" }}>{t("list6")} (3x4),</li>
+                  <li style={{ marginTop: "3px" }}>{t("list7")}</li>
                   <li style={{ marginTop: "3px" }}>
-                    onki okan ya-da isleyan yerinden hasiyetnama
-                  </li>
-                  <li style={{ marginTop: "3px" }}>harby biledin nusgasy</li>
-                  <li style={{ marginTop: "3px" }}>
-                    yasayan yerinden guwa haty (Forma №3)
-                  </li>
-                  <li style={{ marginTop: "3px" }}>6 surat (3x4)</li>
-                  <li style={{ marginTop: "3px" }}>lukmancylyk guwanamasy,</li>
-                  <li style={{ marginTop: "3px" }}>
-                    uc arka we maglumat (cap edilen we elektron gornusi).
+                    {t("list8a")} {t("list8b")}
                   </li>
                 </ul>
               </Stack>

@@ -1,0 +1,12 @@
+.nothing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}

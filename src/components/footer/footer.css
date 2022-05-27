@@ -14,3 +14,22 @@
   color: #fff;
   text-decoration: none;
 }
+@media only screen and (max-width: 768px) {
+  .footerText {
+    padding-bottom: 10px;
+  }
+  .footerDeartment p:nth-child(1) {
+    margin-top: 10px;
+  }
+  .footerDeartment p:nth-child(2) {
+    margin-top: 3px;
+  }
+  .footerDeartment p:nth-child(3) {
+    margin-top: 3px;
+  }
+
+  .footerDeartment p:nth-child(4) {
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+}

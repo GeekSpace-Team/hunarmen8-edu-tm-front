@@ -2,8 +2,8 @@ import { Stack } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { i18n } from "../../Language/LangConfig";
-import "./header.css";
 import { makeStyles } from "@mui/styles";
+import "./header.css";
 
 const useStyles = makeStyles({
   paper: {
@@ -60,38 +60,9 @@ const Header = () => {
     localStorage.setItem("lang", ln);
   };
   return (
-    <div className="header">
-      <Stack direction="row" spacing={1} className="Flag">
-        <img
-          src="./image/RuFlag.svg"
-          onClick={() => langChange("ru")}
-          className={firstLangClass}
-          style={{ cursor: "pointer" }}
-          alt="#"
-        />
-        <img
-          src="./image/TmFlag.svg"
-          onClick={() => langChange("tm")}
-          className={secondLangClass}
-          style={{ cursor: "pointer" }}
-          alt="#"
-        />
-      </Stack>
-      <div className="headerSection">
-        <Stack direction="row" spacing={10} alignItems="center">
-          <label>
-            {t("hakimlik")} <br /> 8-nji hünär okuw mekdebi
-          </label>
-          <img src="./image/Gerb.svg" alt="#" />
-          <label>
-            профессионально-техническая <br /> {t("hakimlik")} <br /> ашгабат
-          </label>
-        </Stack>
-      </div>
-
-      {/* Media Section */}
-      <div className="headerSectionMedia">
-        <Stack direction="column" spacing={1} className="FlagMedia">
+    <>
+      <div className="header">
+        <Stack direction="row" spacing={1} className="Flag">
           <img
             src="./image/RuFlag.svg"
             onClick={() => langChange("ru")}
@@ -107,18 +78,50 @@ const Header = () => {
             alt="#"
           />
         </Stack>
-        <Stack direction={"column"} alignItems="center" spacing={3}>
-          <img src="./image/Gerb.svg" style={{ width: "100px" }} alt="#" />
-          <label>
-            {t("hakimlik")} <br /> 8-nji hünär okuw mekdebi
-          </label>
-          <label>
-            профессионально-техническая <br /> школа №8 хякимлика города <br />{" "}
-            ашгабат
-          </label>
-        </Stack>
+        <div className="headerSection">
+          <Stack direction="row" spacing={10} alignItems="center">
+            <label>
+              aşgabat şäher häkimliginiň <br /> 8-nji hünär okuw mekdebi
+            </label>
+            <img src="./image/Gerb.svg" alt="#" />
+            <label>
+              профессионально-техническая <br /> школа №8 хякимлика города{" "}
+              <br /> ашгабат
+            </label>
+          </Stack>
+        </div>
+
+        {/* Media Section */}
+        <div className="headerSectionMedia">
+          <Stack direction="column" spacing={1} className="FlagMedia">
+            <img
+              src="./image/RuFlag.svg"
+              onClick={() => langChange("ru")}
+              className={firstLangClass}
+              style={{ cursor: "pointer" }}
+              alt="#"
+            />
+            <img
+              src="./image/TmFlag.svg"
+              onClick={() => langChange("tm")}
+              className={secondLangClass}
+              style={{ cursor: "pointer" }}
+              alt="#"
+            />
+          </Stack>
+          <Stack direction={"column"} alignItems="center" spacing={3}>
+            <img src="./image/Gerb.svg" style={{ width: "100px" }} alt="#" />
+            <label>
+              aşgabat şäher häkimliginiň <br /> 8-nji hünär okuw mekdebi
+            </label>
+            <label>
+              профессионально-техническая <br /> школа №8 хякимлика города{" "}
+              <br /> ашгабат
+            </label>
+          </Stack>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
