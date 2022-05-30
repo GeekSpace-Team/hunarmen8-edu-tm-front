@@ -5,3 +5,11 @@
 .proffImg img {
   height: 350px;
 }
+.proffTitle {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 2px;
+  margin-bottom: 50px;
+  text-decoration: none;
+}

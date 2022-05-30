@@ -40,17 +40,28 @@ const Footer = () => {
                 spy={true}
                 smooth={true}
                 to="header"
+                className="activLink"
                 activeClass="activeClass"
               >
                 <li>{t("homePage")}</li>
               </Link>
-              <Link spy={true} smooth={true} to="comeToLearn">
+              <Link
+                spy={true}
+                smooth={true}
+                className="activLink"
+                to="comeToLearn"
+              >
                 <li>{t("aboutUs")}</li>
               </Link>
-              <Link spy={true} smooth={true} to="professia">
+              <Link
+                spy={true}
+                smooth={true}
+                className="activLink"
+                to="professia"
+              >
                 <li>{t("raspisaniya")}</li>
               </Link>
-              <Link spy={true} smooth={true} to="contact">
+              <Link spy={true} smooth={true} className="activLink" to="contact">
                 <li>{t("contactUs")}</li>
               </Link>
             </Stack>

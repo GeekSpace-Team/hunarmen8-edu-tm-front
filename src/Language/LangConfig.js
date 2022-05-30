@@ -11,7 +11,7 @@ i18n
       tm: {
         translation: {
           hakimlik: "hakimligin yeri",
-          okamaGel: "Bize okamaga geliň",
+          okamaGel: " okamaga geliň !",
           gijeki: "Okuwlaryň gündizki we agşamky bölümleri bar.",
           resmi:
             "Resminamalar iýul aýynyň 01-den awgust aýynyň 28-ne çenli irden ",
@@ -37,7 +37,9 @@ i18n
           addres: "Aşgabat şäheri, Görogly köçesi, 91 (20)",
           mail: "Elektron poçta salgymyz:",
           phone: "Telefon:",
-          forContact: "Habarlaşmak üçin",
+          forContact: " üçin",
+          okuw: "OKUW",
+          hunar: "HÜNÄRLERI",
           busDirection:
             "Biziň mekdebimiziň ýanyndaky teke bazar awtobus duralgasyna gelýän awtobuslar:",
           invitation:
@@ -57,12 +59,20 @@ i18n
           professia12: "(elektro kebşirleme we gaz bilen kebşirleme işleri)",
           professia13: "Geodeziýaçy",
           professia14: "Ýaşaýyş-jemagat hojalygynyň ussasy",
+          time: "\u00a0\u00a0\u00a0\u00a0\u00a01,5 ýyl\u00a0\u00a0\u00a0\u00a0\u00a0",
+          timee:
+            "\u00a0\u00a0\u00a0\u00a0\u00a010 aý\u00a0\u00a0\u00a0\u00a0\u00a0",
+          come: "BIZE",
+          kontact: "HABARLAŞMAK ",
         },
       },
       ru: {
         translation: {
           hakimlik: "dlya prowerka",
-          okamaGel: "приходите к нам учиться!",
+          kontact: "НАШИ",
+          okuw: "учебные",
+          hunar: "планы",
+          okamaGel: " к нам учиться !",
           gijeki: "Занятия проводяться дневное и вечернее время",
           resmi: "Документы принимают с 01 июля по 28 августа 2022 года с ",
           dan: "по",
@@ -88,7 +98,7 @@ i18n
           addres: "гор. Ашгабат, улица Героглы, 91",
           mail: "Адрес электронной почты:",
           phone: "Телефон:",
-          forContact: "наши контакты",
+          forContact: " контакты",
           busDirection: "Автобусные маршруты:",
           invitation:
             "Приглашает выпусников средних школ и взрослых на учебу по следующим специальностям:",
@@ -106,6 +116,10 @@ i18n
           professia12: "(электро-газо сварка)",
           professia13: "Геодезист",
           professia14: "Мастер жилищно-коммунального хозяйство",
+          time: "\u00a0\u00a0\u00a0\u00a0\u00a01,5 год\u00a0\u00a0\u00a0\u00a0\u00a0",
+          timee:
+            "\u00a0\u00a0\u00a0\u00a0\u00a010 месяц\u00a0\u00a0\u00a0\u00a0\u00a0",
+          come: "ПРИХОДИТЕ",
         },
       },
     },

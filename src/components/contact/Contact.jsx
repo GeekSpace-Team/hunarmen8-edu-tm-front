@@ -66,7 +66,25 @@ const Contact = () => {
           </Grid>
           <Grid item lg={6} md={6} xs={12} sm={12} mt={-15}>
             <Grid item lg={12} md={12} sm={12} xs={12} pb={5}>
-              <span className="forContact">{t("forContact")}</span>
+              <label
+                style={{
+                  fontSize: "3vw",
+                  fontWeight: "500",
+                  textDecoration: "underline",
+                  textUnderlineOffset: "10px",
+                }}
+              >
+                {t("kontact")}
+              </label>
+              <span
+                style={{
+                  fontSize: "3vw",
+                  fontWeight: "500",
+                  textTransform: "uppercase",
+                }}
+              >
+                {t("forContact")}
+              </span>
             </Grid>
             <iframe
               src="https://yandex.ru/map-widget/v1/-/CCUJIGBjwC"

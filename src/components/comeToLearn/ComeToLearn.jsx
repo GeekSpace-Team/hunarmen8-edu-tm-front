@@ -22,9 +22,16 @@ const ComeToLearn = () => {
       i18n.changeLanguage("ru");
     }
   }, []);
+
   return (
     <div className="comeToLearn">
-      <p className="comeTitle">{t("okamaGel")}</p>
+      <Grid container>
+        <Grid item lg={4} md={4} sm={12} xs={12}></Grid>
+        <Grid item lg={8} md={8} sm={12} xs={12} mb={5} className="firstWord">
+          <span>{t("come")}</span>
+          <label>{t("okamaGel")}</label>
+        </Grid>
+      </Grid>
       <Container maxWidth="lg">
         <Grid container spacing={5}>
           <Grid item lg={6} md={6} xs={12} sm={12}>
@@ -50,7 +57,7 @@ const ComeToLearn = () => {
           </Grid>
           <Grid item lg={6} md={6} xs={12} sm={12}>
             <Stack>
-              <h3 style={{ marginTop: "-40px" }}>{t("gijeki")}</h3>
+              <h3 style={{ marginTop: "40px" }}>{t("gijeki")}</h3>
               <span
                 style={{
                   marginTop: "20px",

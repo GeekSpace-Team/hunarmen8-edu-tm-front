@@ -88,15 +88,34 @@ const Professia = () => {
     setValue(newValue);
   };
 
-  const tab1 =
-    "\u00a0\u00a0\u00a0\u00a0\u00a010 ay\u00a0\u00a0\u00a0\u00a0\u00a0";
+  const tab1 = t("timee");
 
-  const tab2 =
-    "\u00a0\u00a0\u00a0\u00a0\u00a01,5 ýyl\u00a0\u00a0\u00a0\u00a0\u00a0";
+  const tab2 = t("time");
   return (
     <div>
       <Container maxWidth="lg">
-        <p>okuw hunarleri</p>
+        <Stack direction="row" spacing={1} mb={4}>
+          <p
+            style={{
+              fontSize: "3vw",
+              fontWeight: "500",
+              textDecoration: "underline",
+              textUnderlineOffset: "10px",
+              textTransform: "uppercase",
+            }}
+          >
+            {t("okuw")}
+          </p>
+          <span
+            style={{
+              fontSize: "3vw",
+              fontWeight: "500",
+              textTransform: "uppercase",
+            }}
+          >
+            {t("hunar")}
+          </span>
+        </Stack>
         <span
           style={{
             marginTop: "20px",
@@ -227,7 +246,7 @@ const Professia = () => {
               </Box>
             </Grid>
           </Grid>
-          <Grid item lg={6} md={6} xs={12} sm={12} pt={5}>
+          <Grid item lg={6} md={6} xs={12} sm={12} pt={5} pl={5}>
             <Carousel
               className="main-slide"
               showThumbs={false}

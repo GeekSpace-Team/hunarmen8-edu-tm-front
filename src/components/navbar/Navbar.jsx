@@ -10,8 +10,22 @@ import { useTranslation } from "react-i18next";
 import { i18n } from "../../Language/LangConfig";
 import { Link } from "react-scroll";
 import "./navbar.css";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
 
 const Navbar = () => {
+  const [state, setState] = React.useState({
+    left: false,
+  });
+
   const { t } = useTranslation();
   useEffect(() => {
     let l = localStorage.getItem("lang");
@@ -33,6 +47,51 @@ const Navbar = () => {
     setAnchorElNav(null);
   };
 
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List>
+        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        {["All mail", "Trash", "Spam"].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
   return (
     <>
       <AppBar
@@ -53,11 +112,16 @@ const Navbar = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              bgColor="#000"
             >
               <MenuIcon />
             </IconButton>
 
             <Menu
+              style={{
+                background: "#000",
+                width: "50%",
+              }}
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -81,6 +145,7 @@ const Navbar = () => {
                 to="header"
                 activeClass="activeClass"
                 onClick={handleCloseNavMenu}
+                className="activLink"
               >
                 <li>{t("homePage")}</li>
               </Link>
@@ -89,6 +154,7 @@ const Navbar = () => {
                 smooth={true}
                 to="comeToLearn"
                 onClick={handleCloseNavMenu}
+                className="activLink"
               >
                 <li>{t("aboutUs")}</li>
               </Link>
@@ -97,6 +163,7 @@ const Navbar = () => {
                 smooth={true}
                 to="professia"
                 onClick={handleCloseNavMenu}
+                className="activLink"
               >
                 <li>{t("raspisaniya")}</li>
               </Link>
@@ -105,6 +172,7 @@ const Navbar = () => {
                 smooth={true}
                 to="contact"
                 onClick={handleCloseNavMenu}
+                className="activLink"
               >
                 <li>{t("contactUs")}</li>
               </Link>
@@ -125,6 +193,7 @@ const Navbar = () => {
               to="header"
               activeClass="activeClass"
               onClick={handleCloseNavMenu}
+              className="activLink"
             >
               <li>{t("homePage")}</li>
             </Link>
@@ -133,6 +202,7 @@ const Navbar = () => {
               smooth={true}
               to="comeToLearn"
               onClick={handleCloseNavMenu}
+              className="activLink"
             >
               <li>{t("aboutUs")}</li>
             </Link>
@@ -141,6 +211,7 @@ const Navbar = () => {
               smooth={true}
               to="professia"
               onClick={handleCloseNavMenu}
+              className="activLink"
             >
               <li>{t("raspisaniya")}</li>
             </Link>
@@ -149,11 +220,10 @@ const Navbar = () => {
               smooth={true}
               to="contact"
               onClick={handleCloseNavMenu}
+              className="activLink"
             >
               <li>{t("contactUs")}</li>
             </Link>
-            {/* </>
-            ))} */}
           </Box>
         </Container>
       </AppBar>
