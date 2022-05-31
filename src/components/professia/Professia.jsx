@@ -201,6 +201,10 @@ const Professia = () => {
                           <b>{t("professia14")}</b>
                         </p>
                         <hr />
+                        <p>
+                          <b>{t("professia15")}</b>
+                        </p>
+                        <hr />
                       </Stack>
                     </Grid>
                   </TabPanel>

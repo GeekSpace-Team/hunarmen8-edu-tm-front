@@ -22,6 +22,7 @@
   .headerSectionMedia {
     display: block;
     text-align: center;
+    padding-bottom: 80px;
   }
   .Flag img {
     display: none;

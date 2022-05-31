@@ -31,10 +31,10 @@ const Footer = () => {
           </Grid>
 
           {/* First column ends here */}
-
+          <Grid item lg={1} md={1}></Grid>
           {/* Second column start here */}
 
-          <Grid item lg={4} md={4} sm={6} xs={12}>
+          <Grid item lg={2} md={2} sm={6} xs={12}>
             <Stack direction="column" className="footerDeartment" spacing={2}>
               <Link
                 spy={true}
@@ -68,6 +68,7 @@ const Footer = () => {
           </Grid>
 
           {/* Second column ends here */}
+          <Grid item lg={1} md={1}></Grid>
 
           {/* Third column start here */}
           <Grid item lg={4} md={4} sm={12} xs={12}>
@@ -80,7 +81,7 @@ const Footer = () => {
               </Stack>
             </Grid>
             <Grid item lg={12} md={12} sm={12} xs={12} mt={2}>
-              <Stack direction="row" spacing={3}>
+              <Stack direction="row" spacing={3} className="thirdItemFooter">
                 <p>
                   <b>{t("mail")}</b>
                 </p>
@@ -90,7 +91,7 @@ const Footer = () => {
               </Stack>
             </Grid>
             <Grid item lg={12} md={12} sm={12} xs={12} mt={2}>
-              <Stack direction="row" spacing={3}>
+              <Stack direction="row" spacing={3} className="thirdItemFooter">
                 <p>
                   <b>{t("phone")}</b>
                 </p>
@@ -100,7 +101,7 @@ const Footer = () => {
               </Stack>
             </Grid>
             <Grid item lg={12} md={12} sm={12} xs={12}>
-              <Stack direction="column" ml={"36%"}>
+              <Stack direction="column" ml={"36%"} className="thirdItemFooter">
                 <a href="tel:+99312 92 47 83" className="phoneNumbersFooter">
                   +(993) 12 92 47 83
                 </a>
@@ -114,7 +115,7 @@ const Footer = () => {
           {/* Third column ends here */}
         </Grid>
         <Grid item lg={12} md={12} sm={12} xs={12} pt={7} textAlign="center">
-          <p>{t("title")}</p>
+          <p style={{ textTransform: "uppercase" }}>{t("title")}</p>
         </Grid>
       </Container>
     </div>

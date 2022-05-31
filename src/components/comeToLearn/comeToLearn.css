@@ -43,4 +43,7 @@ h3 {
   .comeTitle {
     font-size: 25px;
   }
+  .comeToLearnImg img {
+    height: 320px;
+  }
 }

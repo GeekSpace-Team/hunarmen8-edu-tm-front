@@ -18,18 +18,14 @@
   .footerText {
     padding-bottom: 10px;
   }
-  .footerDeartment p:nth-child(1) {
-    margin-top: 10px;
+  .footerDeartment {
+    padding-top: 40px;
+    margin-bottom: 40px;
   }
-  .footerDeartment p:nth-child(2) {
-    margin-top: 3px;
+  .footerDeartment li {
+    margin-bottom: -12px;
   }
-  .footerDeartment p:nth-child(3) {
-    margin-top: 3px;
-  }
-
-  .footerDeartment p:nth-child(4) {
-    margin-top: 3px;
-    margin-bottom: 10px;
+  .thirdItemFooter p {
+    padding-bottom: -50px;
   }
 }

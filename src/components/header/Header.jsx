@@ -93,22 +93,6 @@ const Header = () => {
 
         {/* Media Section */}
         <div className="headerSectionMedia">
-          <Stack direction="column" spacing={1} className="FlagMedia">
-            <img
-              src="./image/RuFlag.svg"
-              onClick={() => langChange("ru")}
-              className={firstLangClass}
-              style={{ cursor: "pointer" }}
-              alt="#"
-            />
-            <img
-              src="./image/TmFlag.svg"
-              onClick={() => langChange("tm")}
-              className={secondLangClass}
-              style={{ cursor: "pointer" }}
-              alt="#"
-            />
-          </Stack>
           <Stack direction={"column"} alignItems="center" spacing={3}>
             <img src="./image/Gerb.svg" style={{ width: "100px" }} alt="#" />
             <label>

@@ -98,15 +98,23 @@ const Contact = () => {
             ></iframe>
           </Grid>
         </Grid>
-        <Grid item lg={12} md={12} xs={12} sm={12} mt={10} textAlign="center">
-          <Stack direction="column" spacing={2}>
-            <p>
-              <b>{t("busDirection")}</b>
-            </p>
-            <span>
-              № 6,8,10,13,14,15,16,21,22,23,26,30,38,40,49,50,51,56,58,61,62,63
-            </span>
-          </Stack>
+        <Grid container>
+          <Grid item lg={12} md={12} xs={8} sm={8} mt={10} textAlign="center">
+            <Stack direction="column" spacing={2}>
+              <p>
+                <b>{t("busDirection")}</b>
+              </p>
+              <span className="mediaListBus">
+                №
+                6,8,10,13,14,15,16,21,22,23,26,30,38,40,49,50,51,56,58,61,62,63
+              </span>
+              <span className="mediaListBuss">
+                № 6,8,10,13,14,15,16,21,22,23,26,30,38,40,49,50,51,
+                <br />
+                56,58,61,62,63
+              </span>
+            </Stack>
+          </Grid>
         </Grid>
       </Container>
     </div>

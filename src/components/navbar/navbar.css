@@ -4,9 +4,110 @@
   justify-content: center;
   gap: 3rem;
 }
-li {
+.activLink li {
   text-decoration: none;
   list-style: none;
+  color: #fff;
+  margin: 0 19px;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.mobileLink {
+  color: #000;
+  padding: 14px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mobileLink:hover {
+  background-color: #007632;
+  cursor: pointer;
+  color: #fff;
+}
+
+.bgGlass {
+  width: 100%;
+  height: 16vh;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.bgGlass:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  bottom: 0;
+  background-color: #007632;
+}
+.header {
+  background-attachment: fixed;
+}
+
+.header.active {
+  height: 16vh;
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.smallLink:nth-child(2) {
+  margin-right: 20px;
+}
+
+.smallLink {
+  color: #000;
+  text-decoration: none;
+  font-family: "regularFont";
+  font-size: 14px;
+}
+
+.langBtn {
+  padding: 4px;
+  font-family: "regularFont";
+  background-color: transparent;
+  color: #000;
+  border: none;
+}
+
+.langBtnActive {
+  padding: 5px;
+  font-family: "boldFont";
+  background-color: white;
+  color: #000;
+  border: none;
+}
+
+.langSelect {
+  background-color: transparent;
+  color: #000;
+  padding: 3px;
+}
+
+.langSelect option {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .bgGlass {
+    height: 5vh;
+  }
+  .header {
+    height: 5vh;
+  }
+  .header.active {
+    height: 8vh;
+    padding-bottom: 10px;
+    width: 100%;
+  }
 }

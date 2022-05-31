@@ -59,6 +59,7 @@ i18n
           professia12: "(elektro kebşirleme we gaz bilen kebşirleme işleri)",
           professia13: "Geodeziýaçy",
           professia14: "Ýaşaýyş-jemagat hojalygynyň ussasy",
+          professia15: "Sowadyjylary we kondisionerleri bejeriji slesar",
           time: "\u00a0\u00a0\u00a0\u00a0\u00a01,5 ýyl\u00a0\u00a0\u00a0\u00a0\u00a0",
           timee:
             "\u00a0\u00a0\u00a0\u00a0\u00a010 aý\u00a0\u00a0\u00a0\u00a0\u00a0",
@@ -116,6 +117,8 @@ i18n
           professia12: "(электро-газо сварка)",
           professia13: "Геодезист",
           professia14: "Мастер жилищно-коммунального хозяйство",
+          professia15: "Слесарь по ремонту холодильников и кондиционеров",
+
           time: "\u00a0\u00a0\u00a0\u00a0\u00a01,5 год\u00a0\u00a0\u00a0\u00a0\u00a0",
           timee:
             "\u00a0\u00a0\u00a0\u00a0\u00a010 месяц\u00a0\u00a0\u00a0\u00a0\u00a0",

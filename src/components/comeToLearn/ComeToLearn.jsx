@@ -36,7 +36,7 @@ const ComeToLearn = () => {
         <Grid container spacing={5}>
           <Grid item lg={6} md={6} xs={12} sm={12}>
             <Carousel
-              className="main-slide"
+              className="main-slide comeLearn"
               showThumbs={false}
               autoPlay={true}
               showArrows={false}
