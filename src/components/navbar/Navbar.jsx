@@ -23,6 +23,8 @@ import "./navbar.css";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { Grid, Stack } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import styled from "styled-components";
+
 import {
   Nav,
   // NavLink,
@@ -37,6 +39,24 @@ const useStyles = makeStyles({
     background: "black",
   },
 });
+export const NavLink = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  margin: 0, 30px;
+  padding-left: 42px;
+  height: 100%;
+  cursor: pointer;
+  font-family: regularFont;
+  font-size: 20px;
+  &.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #fff;
+  }
+`;
 
 const Navbar = () => {
   const [state, setState] = React.useState({
@@ -111,41 +131,6 @@ const Navbar = () => {
   };
   const classes = useStyles();
 
-  // const list = (anchor) => (
-  //   <Box
-  //     sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
-  //     role="presentation"
-  //     onClick={toggleDrawer(anchor, false)}
-  //     onKeyDown={toggleDrawer(anchor, false)}
-  //   >
-  //     <List>
-  //       {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-  //         <ListItem key={text} disablePadding>
-  //           <ListItemButton>
-  //             <ListItemIcon>
-  //               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-  //             </ListItemIcon>
-  //             <ListItemText primary={text} />
-  //           </ListItemButton>
-  //         </ListItem>
-  //       ))}
-  //     </List>
-  //     <Divider />
-  //     <List>
-  //       {["All mail", "Trash", "Spam"].map((text, index) => (
-  //         <ListItem key={text} disablePadding>
-  //           <ListItemButton>
-  //             <ListItemIcon>
-  //               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-  //             </ListItemIcon>
-  //             <ListItemText primary={text} />
-  //           </ListItemButton>
-  //         </ListItem>
-  //       ))}
-  //     </List>
-  //   </Box>
-  // );
-
   const list = (anchor) => (
     <Box
       sx={{
@@ -155,21 +140,25 @@ const Navbar = () => {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      style={{ background: "white" }}
+      style={{ background: "#fff" }}
     >
       <Stack direction={"column"}>
-        <Link to="header" className="mobileLink">
+        <NavLink
+          to="header"
+          style={{ fontSize: "45px" }}
+          className="mobileLink"
+        >
           {t("homePage")}
-        </Link>
-        <Link to="comeToLearn" className="mobileLink">
+        </NavLink>
+        <NavLink to="comeToLearn" className="mobileLink">
           {t("aboutUs")}
-        </Link>
-        <Link to="professia" className="mobileLink">
+        </NavLink>
+        <NavLink to="professia" className="mobileLink">
           {t("raspisaniya")}
-        </Link>
-        <Link to="contact" className="mobileLink">
+        </NavLink>
+        <NavLink to="contact" className="mobileLink">
           {t("contactUs")}
-        </Link>
+        </NavLink>
         <br />
         <Stack direction={"row"} justifyContent="center" spacing={2}>
           <img
@@ -191,141 +180,6 @@ const Navbar = () => {
   );
   return (
     <>
-      {/* <AppBar
-        position="static"
-        style={{
-          background: "#007632",
-          marginTop: "50px",
-          height: "10vh",
-          justifyContent: "center",
-        }}
-      >
-        <Container maxWidth="xl">
-          <Box sx={{ flexGrow: 2, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-
-            <Menu
-              style={{
-                background: "#000",
-                width: "50%",
-              }}
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              <Link
-                spy={true}
-                smooth={true}
-                to="header"
-                activeClass="activeClass"
-                onClick={handleCloseNavMenu}
-                className="activLink"
-              >
-                <li>{t("homePage")}</li>
-              </Link>
-              <Link
-                spy={true}
-                smooth={true}
-                to="comeToLearn"
-                onClick={handleCloseNavMenu}
-                className="activLink"
-              >
-                <li>{t("aboutUs")}</li>
-              </Link>
-              <Link
-                spy={true}
-                smooth={true}
-                to="professia"
-                onClick={handleCloseNavMenu}
-                className="activLink"
-              >
-                <li>{t("raspisaniya")}</li>
-              </Link>
-              <Link
-                spy={true}
-                smooth={true}
-                to="contact"
-                onClick={handleCloseNavMenu}
-                className="activLink"
-              >
-                <li>{t("contactUs")}</li>
-              </Link>
-            </Menu>
-          </Box>
-          <Box
-            sx={{
-              display: {
-                xs: "none",
-                md: "flex",
-              },
-            }}
-            className="nothing"
-          >
-            <Link
-              spy={true}
-              smooth={true}
-              to="header"
-              activeClass="activeClass"
-              onClick={handleCloseNavMenu}
-              className="activLink"
-            >
-              <li>{t("homePage")}</li>
-            </Link>
-            <Link
-              spy={true}
-              smooth={true}
-              to="comeToLearn"
-              onClick={handleCloseNavMenu}
-              className="activLink"
-            >
-              <li>{t("aboutUs")}</li>
-            </Link>
-            <Link
-              spy={true}
-              smooth={true}
-              to="professia"
-              onClick={handleCloseNavMenu}
-              className="activLink"
-            >
-              <li>{t("raspisaniya")}</li>
-            </Link>
-            <Link
-              spy={true}
-              smooth={true}
-              to="contact"
-              onClick={handleCloseNavMenu}
-              className="activLink"
-            >
-              <li>{t("contactUs")}</li>
-            </Link>
-          </Box>
-        </Container>
-      </AppBar> */}
-
-      {/*  */}
-
       <Nav className="header bgGlass">
         <Container maxWidth="lg">
           <Grid
@@ -337,50 +191,55 @@ const Navbar = () => {
             <Grid item={true} xs={7}>
               <Stack justifyContent={"center"} direction={"row"}>
                 <NavMenu>
-                  <Link
+                  <NavLink
                     spy={true}
                     smooth={true}
                     to="header"
                     activeClass="activeClass"
                     onClick={handleCloseNavMenu}
                     style={{ cursor: "pointer" }}
-                    className="activLink"
+                    className="navBarItem"
+                    style={{
+                      fontWeight: "600",
+                      textDecoration: "underline",
+                      textUnderlineOffset: "7px",
+                    }}
                   >
-                    <li>{t("homePage")}</li>
-                  </Link>
-                  <Link
+                    {t("homePage")}
+                  </NavLink>
+                  <NavLink
                     spy={true}
                     smooth={true}
                     to="comeToLearn"
                     activeClass="activeClass"
                     onClick={handleCloseNavMenu}
                     style={{ cursor: "pointer" }}
-                    className="activLink"
+                    className="navBarItem"
                   >
-                    <li>{t("aboutUs")}</li>
-                  </Link>
-                  <Link
+                    {t("aboutUs")}
+                  </NavLink>
+                  <NavLink
                     spy={true}
                     smooth={true}
                     to="professia"
                     activeClass="activeClass"
                     onClick={handleCloseNavMenu}
                     style={{ cursor: "pointer" }}
-                    className="activLink"
+                    className="navBarItem"
                   >
-                    <li>{t("raspisaniya")}</li>
-                  </Link>
-                  <Link
+                    {t("raspisaniya")}
+                  </NavLink>
+                  <NavLink
                     spy={true}
                     smooth={true}
                     activeClass="activeClass"
                     onClick={handleCloseNavMenu}
                     style={{ cursor: "pointer" }}
                     to="contact"
-                    className="activLink"
+                    className="navBarItem"
                   >
-                    <li>{t("contactUs")}</li>
-                  </Link>
+                    {t("contactUs")}
+                  </NavLink>
                 </NavMenu>
               </Stack>
             </Grid>

@@ -40,7 +40,7 @@ const Footer = () => {
                 spy={true}
                 smooth={true}
                 to="header"
-                className="activLink"
+                className="bottomNavbar"
                 activeClass="activeClass"
               >
                 <li>{t("homePage")}</li>
@@ -48,7 +48,7 @@ const Footer = () => {
               <Link
                 spy={true}
                 smooth={true}
-                className="activLink"
+                className="bottomNavbar"
                 to="comeToLearn"
               >
                 <li>{t("aboutUs")}</li>
@@ -56,12 +56,17 @@ const Footer = () => {
               <Link
                 spy={true}
                 smooth={true}
-                className="activLink"
+                className="bottomNavbar"
                 to="professia"
               >
                 <li>{t("raspisaniya")}</li>
               </Link>
-              <Link spy={true} smooth={true} className="activLink" to="contact">
+              <Link
+                spy={true}
+                smooth={true}
+                className="bottomNavbar"
+                to="contact"
+              >
                 <li>{t("contactUs")}</li>
               </Link>
             </Stack>
@@ -73,42 +78,39 @@ const Footer = () => {
           {/* Third column start here */}
           <Grid item lg={4} md={4} sm={12} xs={12}>
             <Grid item lg={12} md={12} xs={12} sm={12}>
-              <Stack direction="row" spacing={3}>
-                <p>
-                  <b>{t("adress")}</b>
-                </p>
+              <Stack direction={"row"} spacing={2}>
+                <span style={{ fontWeight: "500" }}>{t("adress")}</span>
                 <p>{t("addres")}</p>
               </Stack>
             </Grid>
-            <Grid item lg={12} md={12} sm={12} xs={12} mt={2}>
-              <Stack direction="row" spacing={3} className="thirdItemFooter">
-                <p>
-                  <b>{t("mail")}</b>
-                </p>
-                <a href="bhom8@mail.ru" className="phoneNumbersFooter">
+            <Grid item lg={12} md={12} xs={12} sm={12} mt={3}>
+              <Stack direction="row" spacing={3}>
+                <span style={{ fontWeight: "500" }}>{t("mail")}</span>
+                <a className="phoneNumbersFooter" href="bhom8@mail.ru">
                   bhom8@mail.ru
                 </a>
               </Stack>
             </Grid>
-            <Grid item lg={12} md={12} sm={12} xs={12} mt={2}>
-              <Stack direction="row" spacing={3} className="thirdItemFooter">
-                <p>
-                  <b>{t("phone")}</b>
-                </p>
-                <a href="tel:+99312 92 73 08" className="phoneNumbersFooter">
-                  +(993) 12 92 73 08
-                </a>
+            <Grid item lg={12} md={12} xs={12} sm={12} mt={3}>
+              <Stack direction="row" spacing={2.5}>
+                <span style={{ fontWeight: "500" }}>{t("phone")}</span>
               </Stack>
             </Grid>
-            <Grid item lg={12} md={12} sm={12} xs={12}>
-              <Stack direction="column" ml={"36%"} className="thirdItemFooter">
-                <a href="tel:+99312 92 47 83" className="phoneNumbersFooter">
-                  +(993) 12 92 47 83
-                </a>
-                <a href="tel:+99312 92 47 89" className="phoneNumbersFooter">
-                  +(993) 12 92 47 89
-                </a>
-              </Stack>
+            <Grid container>
+              <Grid item lg={5} md={5} xs={12} sm={12}></Grid>
+              <Grid item lg={7} md={7} xs={7} sm={7} mt={-2.5}>
+                <Stack spacing={2} className="pnFooter">
+                  <a className="phoneNumbersFooter" href="tel:+99312 92 73 08">
+                    +(993) 12 92 73 08
+                  </a>
+                  <a className="phoneNumbersFooter" href="tel:+99312 92 47 83">
+                    +(993) 12 92 47 83
+                  </a>
+                  <a className="phoneNumbersFooter" href="tel:+99312 92 47 89">
+                    +(993) 12 92 47 89
+                  </a>
+                </Stack>
+              </Grid>
             </Grid>
           </Grid>
 

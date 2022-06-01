@@ -21,7 +21,7 @@ const Contact = () => {
       <Container maxWidth="lg">
         <Grid container>
           <Grid item lg={6} md={6} xs={12} sm={12}>
-            <Grid item lg={12} md={12} xs={12} sm={12} mb={3}>
+            {/* <Grid item lg={12} md={12} xs={12} sm={12} mb={3}>
               <Stack direction="row" spacing={3}>
                 <p>
                   <b>{t("adress")} </b>
@@ -62,29 +62,63 @@ const Contact = () => {
                   bhom8@mail.ru
                 </a>
               </Stack>
+            </Grid> */}
+
+            <Grid item lg={12} md={12} xs={12} sm={12} mb={4}>
+              <Stack direction={"row"} spacing={2}>
+                <span style={{ fontWeight: "500" }}>{t("adress")}</span>
+                <p>{t("addres")}</p>
+              </Stack>
+            </Grid>
+
+            <Grid item lg={12} md={12} xs={12} sm={12} mt={3}>
+              <Stack direction="row" spacing={2.5}>
+                <span style={{ fontWeight: "500" }}>{t("phone")}</span>
+              </Stack>
+            </Grid>
+            <Grid container>
+              <Grid item lg={3} md={3} xs={12} sm={12}></Grid>
+              <Grid item lg={9} md={9} xs={7} sm={7} mt={-2.5}>
+                <Stack spacing={0.5} className="pnFooter">
+                  <a className="phoneNumbersContact" href="tel:+99312 92 73 08">
+                    +(993) 12 92 73 08
+                  </a>
+                  <a className="phoneNumbersContact" href="tel:+99312 92 47 83">
+                    +(993) 12 92 47 83
+                  </a>
+                  <a className="phoneNumbersContact" href="tel:+99312 92 47 89">
+                    +(993) 12 92 47 89
+                  </a>
+                </Stack>
+              </Grid>
+            </Grid>
+            <Grid item lg={12} md={12} xs={12} sm={12} mt={4}>
+              <Stack direction="row" spacing={3}>
+                <span style={{ fontWeight: "500" }}>{t("mail")}</span>
+                <a className="phoneNumbersContact" href="bhom8@mail.ru">
+                  bhom8@mail.ru
+                </a>
+              </Stack>
             </Grid>
           </Grid>
           <Grid item lg={6} md={6} xs={12} sm={12} mt={-15}>
             <Grid item lg={12} md={12} sm={12} xs={12} pb={5}>
-              <label
-                style={{
-                  fontSize: "3vw",
-                  fontWeight: "500",
-                  textDecoration: "underline",
-                  textUnderlineOffset: "10px",
-                }}
+              <Stack
+                direction="column"
+                spacing={1}
+                className="contactMediaTitle"
               >
-                {t("kontact")}
-              </label>
-              <span
-                style={{
-                  fontSize: "3vw",
-                  fontWeight: "500",
-                  textTransform: "uppercase",
-                }}
-              >
-                {t("forContact")}
-              </span>
+                <label
+                  style={{
+                    fontSize: "2.5vw",
+                    fontWeight: "500",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {t("kontact")}
+                </label>
+                <img src="./image/Line.svg" alt="#" style={{ width: "95px" }} />
+              </Stack>
             </Grid>
             <iframe
               src="https://yandex.ru/map-widget/v1/-/CCUJIGBjwC"
@@ -99,7 +133,7 @@ const Contact = () => {
           </Grid>
         </Grid>
         <Grid container>
-          <Grid item lg={12} md={12} xs={8} sm={8} mt={10} textAlign="center">
+          <Grid item lg={12} md={12} xs={8} sm={8} mt={0} textAlign="center">
             <Stack direction="column" spacing={2}>
               <p>
                 <b>{t("busDirection")}</b>

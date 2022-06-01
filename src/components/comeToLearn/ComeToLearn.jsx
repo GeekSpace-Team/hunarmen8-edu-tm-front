@@ -27,14 +27,16 @@ const ComeToLearn = () => {
     <div className="comeToLearn">
       <Grid container>
         <Grid item lg={4} md={4} sm={12} xs={12}></Grid>
-        <Grid item lg={8} md={8} sm={12} xs={12} mb={5} className="firstWord">
-          <span>{t("come")}</span>
-          <label>{t("okamaGel")}</label>
+        <Grid item lg={8} md={8} sm={12} xs={12} mb={9} className="firstWord">
+          <Stack direction="column" spacing={1}>
+            <span>{t("come")}</span>
+            <img src="./image/Line.svg" alt="#" style={{ width: "80px" }} />
+          </Stack>
         </Grid>
       </Grid>
       <Container maxWidth="lg">
         <Grid container spacing={5}>
-          <Grid item lg={6} md={6} xs={12} sm={12}>
+          <Grid item lg={6} md={6} xs={12} sm={12} mt={3} mb={3}>
             <Carousel
               className="main-slide comeLearn"
               showThumbs={false}
@@ -55,7 +57,7 @@ const ComeToLearn = () => {
               </div>
             </Carousel>
           </Grid>
-          <Grid item lg={6} md={6} xs={12} sm={12}>
+          <Grid item lg={6} md={6} xs={12} sm={12} mt={-7}>
             <Stack>
               <h3 style={{ marginTop: "40px" }}>{t("gijeki")}</h3>
               <span

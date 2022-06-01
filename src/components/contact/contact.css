@@ -1,5 +1,5 @@
 .contact {
-  margin-top: 300px;
+  margin-top: 170px;
   margin-bottom: 50px;
 }
 
@@ -7,6 +7,10 @@
   text-decoration: none;
   color: #000;
   margin-bottom: 5px;
+}
+.phoneNumbersContact {
+  color: #000;
+  text-decoration: none;
 }
 .forContact {
   font-size: 45px;
@@ -31,5 +35,9 @@
   }
   .mediaListBuss {
     display: block;
+  }
+  .contactMediaTitle label {
+    margin-top: 150px;
+    font-size: 5vw;
   }
 }

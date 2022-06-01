@@ -5,14 +5,14 @@ import img2 from "../../img/img2.jpg";
 import img3 from "../../img/img3.jpg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { t } from "i18next";
+// import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 import { i18n } from "../../Language/LangConfig";
 import { TabPanel } from "@mui/lab";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
-import TabList from "@mui/lab/TabList";
+// import TabList from "@mui/lab/TabList";
 import "./professia.css";
 import { styled } from "@mui/material/styles";
 import Tabs from "@mui/material/Tabs";
@@ -94,39 +94,31 @@ const Professia = () => {
   return (
     <div>
       <Container maxWidth="lg">
-        <Stack direction="row" spacing={1} mb={4}>
-          <p
-            style={{
-              fontSize: "3vw",
-              fontWeight: "500",
-              textDecoration: "underline",
-              textUnderlineOffset: "10px",
-              textTransform: "uppercase",
-            }}
-          >
-            {t("okuw")}
-          </p>
+        <Stack spacing={5}>
+          <Stack direction="column" spacing={1} mb={4}>
+            <p
+              style={{
+                fontSize: "2.5vw",
+                fontWeight: "500",
+                textTransform: "uppercase",
+              }}
+            >
+              {t("okuw")}
+            </p>
+            <img src="./image/Line.svg" alt="#" style={{ width: "110px" }} />
+          </Stack>
           <span
             style={{
-              fontSize: "3vw",
-              fontWeight: "500",
-              textTransform: "uppercase",
+              marginTop: "-20px",
+              fontWeight: "600",
+              marginBottom: "30px",
             }}
           >
-            {t("hunar")}
+            {t("invitation")}
           </span>
         </Stack>
-        <span
-          style={{
-            marginTop: "20px",
-            fontWeight: "600",
-            marginBottom: "30px",
-          }}
-        >
-          {t("invitation")}
-        </span>
-        <Grid container className="professia">
-          <Grid item lg={12} md={12} xs={12} sm={12}>
+        <Grid container className="professia" mt={-2}>
+          <Grid item lg={12} md={12} xs={12} sm={12} mt={-2}>
             <Box
               sx={{
                 // borderBottom: 1,
@@ -150,7 +142,7 @@ const Professia = () => {
               }}
             />
           </Grid>
-          <Grid item lg={6} md={6} xs={12} sm={12}>
+          <Grid item lg={6} md={6} xs={12} sm={12} mt={-3}>
             <Grid item lg={12} md={12} xs={12} sm={12}>
               <Box sx={{ width: "100%", typography: "body1" }}>
                 <TabContext value={value}>
@@ -209,7 +201,7 @@ const Professia = () => {
                     </Grid>
                   </TabPanel>
                   <TabPanel value="2">
-                    <Grid item lg={12} md={12} xs={12} sm={12}>
+                    <Grid item lg={12} md={12} xs={12} sm={12} mt={2}>
                       <Stack
                         className="professiaName"
                         direction="column"
@@ -250,7 +242,7 @@ const Professia = () => {
               </Box>
             </Grid>
           </Grid>
-          <Grid item lg={6} md={6} xs={12} sm={12} pt={5} pl={5}>
+          <Grid item lg={6} md={6} xs={12} sm={12} pt={4} pl={5}>
             <Carousel
               className="main-slide"
               showThumbs={false}

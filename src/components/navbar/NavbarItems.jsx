@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
+// import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
@@ -15,7 +16,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -33,7 +34,7 @@ export const NavLink = styled(Link)`
   &.active {
     text-decoration: underline;
     text-underline-offset: 4px;
-    text-decoration-color: #aa323c;
+    text-decoration-color: #fff;
   }
 `;
 
