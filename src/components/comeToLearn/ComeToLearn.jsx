@@ -30,7 +30,12 @@ const ComeToLearn = () => {
         <Grid item lg={8} md={8} sm={12} xs={12} mb={9} className="firstWord">
           <Stack direction="column" spacing={1}>
             <span>{t("come")}</span>
-            <img src="./image/Line.svg" alt="#" style={{ width: "80px" }} />
+            <img
+              className="lineMedia"
+              src="./image/Line.svg"
+              alt="#"
+              style={{ width: "80px" }}
+            />
           </Stack>
         </Grid>
       </Grid>

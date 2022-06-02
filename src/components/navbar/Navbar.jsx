@@ -65,7 +65,6 @@ const Navbar = () => {
 
   const [firstLangClass, setFirstLangClass] = useState("langBtn");
   const [secondLangClass, setSecondLangClass] = useState("langBtn");
-  // const [thirdLangClass, setThirdLangClass] = useState("langBtn");
   const [lang, setLang] = useState("en");
   useEffect(() => {
     let l = localStorage.getItem("lang");
@@ -80,22 +79,17 @@ const Navbar = () => {
   useEffect(() => {
     setFirstLangClass("langBtn");
     setSecondLangClass("langBtn");
-    // setThirdLangClass("langBtn");
     if (lang == "ru") {
       setFirstLangClass("langBtnActive");
     }
     if (lang == "tm") {
       setSecondLangClass("langBtnActive");
     }
-    // if (lang == "ru") {
-    //   setThirdLangClass("langBtnActive");
-    // }
   }, [lang]);
 
   const { t } = useTranslation();
   useEffect(() => {
     let l = localStorage.getItem("lang");
-    // nodeRef = {nodeRef}
     if (l != null && typeof l !== "undefined") {
       i18n.changeLanguage(l);
     } else {
@@ -140,20 +134,16 @@ const Navbar = () => {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      style={{ background: "#fff" }}
+      style={{ background: "#a19f9f" }}
     >
       <Stack direction={"column"}>
-        <NavLink
-          to="header"
-          style={{ fontSize: "45px" }}
-          className="mobileLink"
-        >
+        <NavLink to="header" className="mobileLink">
           {t("homePage")}
         </NavLink>
         <NavLink to="comeToLearn" className="mobileLink">
           {t("aboutUs")}
         </NavLink>
-        <NavLink to="professia" className="mobileLink">
+        <NavLink to="professia" className="mobileLink salam">
           {t("raspisaniya")}
         </NavLink>
         <NavLink to="contact" className="mobileLink">

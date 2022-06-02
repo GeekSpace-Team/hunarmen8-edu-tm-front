@@ -11,6 +11,7 @@
   color: #000;
   padding: 14px;
   text-decoration: none;
+  background-color: #a19f9f;
   text-align: center;
   text-transform: capitalize;
 }
@@ -46,7 +47,9 @@
 .header {
   background-attachment: fixed;
 }
-
+.mobileLink:hover {
+  color: #fff;
+}
 .header.active {
   height: 16vh;
   position: fixed;

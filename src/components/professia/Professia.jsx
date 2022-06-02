@@ -94,29 +94,34 @@ const Professia = () => {
   return (
     <div>
       <Container maxWidth="lg">
-        <Stack spacing={5}>
-          <Stack direction="column" spacing={1} mb={4}>
-            <p
-              style={{
-                fontSize: "2.5vw",
-                fontWeight: "500",
-                textTransform: "uppercase",
-              }}
-            >
-              {t("okuw")}
-            </p>
-            <img src="./image/Line.svg" alt="#" style={{ width: "110px" }} />
-          </Stack>
-          <span
-            style={{
-              marginTop: "-20px",
-              fontWeight: "600",
-              marginBottom: "30px",
-            }}
-          >
-            {t("invitation")}
-          </span>
-        </Stack>
+        <Grid container>
+          <Grid item lg={12} md={12}>
+            <Stack spacing={5}>
+              <Stack
+                direction="column"
+                className="proffMedia"
+                spacing={1}
+                mb={4}
+              >
+                <span>{t("okuw")}</span>
+                <img
+                  src="./image/Line.svg"
+                  alt="#"
+                  style={{ width: "110px" }}
+                />
+              </Stack>
+              <span
+                style={{
+                  marginTop: "-20px",
+                  fontWeight: "600",
+                  marginBottom: "30px",
+                }}
+              >
+                {t("invitation")}
+              </span>
+            </Stack>
+          </Grid>
+        </Grid>
         <Grid container className="professia" mt={-2}>
           <Grid item lg={12} md={12} xs={12} sm={12} mt={-2}>
             <Box
@@ -244,7 +249,7 @@ const Professia = () => {
           </Grid>
           <Grid item lg={6} md={6} xs={12} sm={12} pt={4} pl={5}>
             <Carousel
-              className="main-slide"
+              className="main-slide profffmed"
               showThumbs={false}
               autoPlay={true}
               showArrows={false}

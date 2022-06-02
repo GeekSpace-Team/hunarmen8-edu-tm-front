@@ -108,15 +108,7 @@ const Contact = () => {
                 spacing={1}
                 className="contactMediaTitle"
               >
-                <label
-                  style={{
-                    fontSize: "2.5vw",
-                    fontWeight: "500",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  {t("kontact")}
-                </label>
+                <label>{t("kontact")}</label>
                 <img src="./image/Line.svg" alt="#" style={{ width: "95px" }} />
               </Stack>
             </Grid>

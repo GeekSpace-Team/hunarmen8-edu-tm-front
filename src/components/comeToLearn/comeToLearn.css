@@ -40,4 +40,15 @@ h3 {
   .comeToLearnImg img {
     height: 320px;
   }
+  .firstWord span {
+    font-size: 23px;
+  }
+  .firstWord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .comeLearn {
+    margin-top: -50px;
+  }
 }
