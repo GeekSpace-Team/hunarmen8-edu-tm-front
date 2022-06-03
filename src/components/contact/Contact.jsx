@@ -102,15 +102,22 @@ const Contact = () => {
             </Grid>
           </Grid>
           <Grid item lg={6} md={6} xs={12} sm={12} mt={-15}>
-            <Grid item lg={12} md={12} sm={12} xs={12} pb={5}>
-              <Stack
-                direction="column"
-                spacing={1}
-                className="contactMediaTitle"
-              >
-                <label>{t("kontact")}</label>
-                <img src="./image/Line.svg" alt="#" style={{ width: "95px" }} />
-              </Stack>
+            <Grid container>
+              <Grid item lg={12} md={12} xs={2.5} sm={2.5}></Grid>
+              <Grid item lg={12} md={12} sm={8.5} xs={8.5} pb={5}>
+                <Stack
+                  direction="column"
+                  spacing={1}
+                  className="contactMediaTitle"
+                >
+                  <label>{t("kontact")}</label>
+                  <img
+                    src="./image/Line.svg"
+                    alt="#"
+                    style={{ width: "95px" }}
+                  />
+                </Stack>
+              </Grid>
             </Grid>
             <iframe
               src="https://yandex.ru/map-widget/v1/-/CCUJIGBjwC"
@@ -125,7 +132,7 @@ const Contact = () => {
           </Grid>
         </Grid>
         <Grid container>
-          <Grid item lg={12} md={12} xs={8} sm={8} mt={0} textAlign="center">
+          <Grid item lg={12} md={12} xs={12} sm={12} mt={0} textAlign="center">
             <Stack direction="column" spacing={2}>
               <p>
                 <b>{t("busDirection")}</b>

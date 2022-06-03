@@ -92,34 +92,34 @@ const Professia = () => {
 
   const tab2 = t("time");
   return (
-    <div>
+    <div className="professiaContainer">
       <Container maxWidth="lg">
         <Grid container>
-          <Grid item lg={12} md={12}>
-            <Stack spacing={5}>
-              <Stack
-                direction="column"
-                className="proffMedia"
-                spacing={1}
-                mb={4}
-              >
-                <span>{t("okuw")}</span>
-                <img
-                  src="./image/Line.svg"
-                  alt="#"
-                  style={{ width: "110px" }}
-                />
-              </Stack>
+          <Grid item lg={12} md={12} xs={2.5} sm={2.5}></Grid>
+          <Grid
+            item
+            lg={12}
+            md={12}
+            xs={7.5}
+            sm={7.5}
+            className="proTitleMedia"
+          >
+            <Stack spacing={1}>
+              <span>{t("okuw")}</span>
+              <img src="./image/Line.svg" alt="#" style={{ width: "110px" }} />
+            </Stack>
+          </Grid>
+          <Grid container>
+            <Grid item lg={12} md={12} xs={1.5} sm={1.5}></Grid>
+            <Grid item lg={12} md={12} xs={9.5} sm={9.5} mb={3} mt={1}>
               <span
                 style={{
-                  marginTop: "-20px",
                   fontWeight: "600",
-                  marginBottom: "30px",
                 }}
               >
                 {t("invitation")}
               </span>
-            </Stack>
+            </Grid>
           </Grid>
         </Grid>
         <Grid container className="professia" mt={-2}>
@@ -131,6 +131,7 @@ const Professia = () => {
               }}
             >
               <StyledTabs
+                className="styleTabss"
                 value={value}
                 onChange={handleChange}
                 aria-label="lab API tabs example"
