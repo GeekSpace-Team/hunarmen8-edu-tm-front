@@ -6,13 +6,29 @@
   justify-content: center;
   padding-bottom: 30px;
 }
+.footerDeartment li {
+  font-size: 16px;
+  font-family: "fontRegular";
+  padding-top: 10px;
+}
+.infoSpan {
+  font-family: "fontRegular";
+  font-size: 16px;
+  font-weight: 500;
+}
 .footerText {
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "fontRegular";
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 20px;
   text-transform: uppercase;
 }
 .bottomNavbar {
   list-style: none;
   cursor: pointer;
+  font-size: 19px;
+  font-family: "ubuntuLight";
 }
 .phoneNumbersFooter {
   color: #fff;

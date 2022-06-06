@@ -104,17 +104,19 @@ const Professia = () => {
             sm={7.5}
             className="proTitleMedia"
           >
-            <Stack spacing={1}>
+            <Stack spacing={0.5}>
               <span>{t("okuw")}</span>
               <img src="./image/Line.svg" alt="#" style={{ width: "110px" }} />
             </Stack>
           </Grid>
           <Grid container>
             <Grid item lg={12} md={12} xs={1.5} sm={1.5}></Grid>
-            <Grid item lg={12} md={12} xs={9.5} sm={9.5} mb={3} mt={1}>
+            <Grid item lg={12} md={12} xs={9.5} sm={9.5} mb={4} mt={3}>
               <span
                 style={{
                   fontWeight: "600",
+                  fontSize: "17px",
+                  fontFamily: "fontRegular",
                 }}
               >
                 {t("invitation")}
@@ -136,8 +138,16 @@ const Professia = () => {
                 onChange={handleChange}
                 aria-label="lab API tabs example"
               >
-                <StyledTab label={tab1.replace(/ /g, "\u00a0")} value="1" />
-                <StyledTab label={tab2.replace(/ /g, "\u00a0")} value="2" />
+                <StyledTab
+                  style={{ width: "160px", marginLeft: "30px" }}
+                  label={tab1.replace(/ /g, "\u00a0")}
+                  value="1"
+                />
+                <StyledTab
+                  style={{ width: "160px", marginLeft: "40px" }}
+                  label={tab2.replace(/ /g, "\u00a0")}
+                  value="2"
+                />
               </StyledTabs>
             </Box>
             <hr
@@ -230,12 +240,12 @@ const Professia = () => {
                         <hr />
 
                         <p>
-                          <b className="professiaName">{t("professia9")}</b>
+                          <b>{t("professia9")}</b>
                         </p>
                         <hr />
 
                         <p>
-                          <b className="professiaName">
+                          <b>
                             {t("professia11")}
                             {t("professia12")}
                           </b>

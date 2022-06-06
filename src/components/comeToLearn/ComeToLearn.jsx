@@ -28,7 +28,7 @@ const ComeToLearn = () => {
       <Grid container>
         <Grid item lg={4} md={4} sm={12} xs={12}></Grid>
         <Grid item lg={8} md={8} sm={12} xs={12} mb={9} className="firstWord">
-          <Stack direction="column" spacing={1}>
+          <Stack direction="column" spacing={0.5}>
             <span>{t("come")}</span>
             <img
               className="lineMedia"
@@ -69,14 +69,19 @@ const ComeToLearn = () => {
                 style={{
                   marginTop: "20px",
                   fontWeight: "600",
-                  marginBottom: "30px",
+                  marginBottom: "10px",
+                  fontFamily: "fontRegular",
+                  fontSize: "15px",
+                  lineHeight: "23px",
                 }}
               >
                 {t("resmi")}8<sup>00</sup>
                 {t("dan")} 18<sup>00</sup> {t("namalar")}
               </span>
-              <p style={{ marginBottom: "20px" }}>{t("resminamaSanaw")}</p>
-              <Stack spacing={2}>
+              <p style={{ marginBottom: "15px", fontFamily: "fontRegular" }}>
+                {t("resminamaSanaw")}
+              </p>
+              <Stack spacing={2} className="departmentLissey">
                 <ul style={{ marginLeft: "7%" }}>
                   <li>{t("list1")}</li>
                   <li style={{ marginTop: "3px" }}>{t("list2")}</li>

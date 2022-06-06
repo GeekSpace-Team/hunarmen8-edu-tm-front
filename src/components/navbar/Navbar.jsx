@@ -190,9 +190,11 @@ const Navbar = () => {
                     style={{ cursor: "pointer" }}
                     className="navBarItem"
                     style={{
-                      fontWeight: "600",
+                      fontWeight: "500",
                       textDecoration: "underline",
                       textUnderlineOffset: "7px",
+                      fontFamily: "fontRegular",
+                      fontSize: "20px",
                     }}
                   >
                     {t("homePage")}
@@ -203,7 +205,11 @@ const Navbar = () => {
                     to="comeToLearn"
                     activeClass="activeClass"
                     onClick={handleCloseNavMenu}
-                    style={{ cursor: "pointer" }}
+                    style={{
+                      cursor: "pointer",
+                      fontSize: "17px",
+                      fontFamily: "fontRegular",
+                    }}
                     className="navBarItem"
                   >
                     {t("aboutUs")}
@@ -214,7 +220,11 @@ const Navbar = () => {
                     to="professia"
                     activeClass="activeClass"
                     onClick={handleCloseNavMenu}
-                    style={{ cursor: "pointer" }}
+                    style={{
+                      cursor: "pointer",
+                      fontSize: "17px",
+                      fontFamily: "fontRegular",
+                    }}
                     className="navBarItem"
                   >
                     {t("raspisaniya")}
@@ -224,7 +234,11 @@ const Navbar = () => {
                     smooth={true}
                     activeClass="activeClass"
                     onClick={handleCloseNavMenu}
-                    style={{ cursor: "pointer" }}
+                    style={{
+                      cursor: "pointer",
+                      fontSize: "17px",
+                      fontFamily: "fontRegular",
+                    }}
                     to="contact"
                     className="navBarItem"
                   >

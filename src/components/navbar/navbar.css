@@ -6,7 +6,9 @@
   cursor: pointer;
   text-transform: uppercase;
 }
-
+.navBarItem {
+  font-family: "boldItalian";
+}
 .mobileLink {
   color: #000;
   padding: 14px;

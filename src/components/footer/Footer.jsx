@@ -43,7 +43,7 @@ const Footer = () => {
                 className="bottomNavbar"
                 activeClass="activeClass"
               >
-                <li>{t("homePage")}</li>
+                <li style={{ marginTop: "-10px" }}>{t("homePage")}</li>
               </Link>
               <Link
                 spy={true}
@@ -79,21 +79,27 @@ const Footer = () => {
           <Grid item lg={4} md={4} sm={12} xs={12}>
             <Grid item lg={12} md={12} xs={12} sm={12}>
               <Stack direction={"row"} spacing={2}>
-                <span style={{ fontWeight: "500" }}>{t("adress")}</span>
-                <p>{t("addres")}</p>
+                <span className="infoSpan">{t("adress")}</span>
+                <p style={{ fontFamily: "fontRegular", fontSize: "16px" }}>
+                  {t("addres")}
+                </p>
               </Stack>
             </Grid>
             <Grid item lg={12} md={12} xs={12} sm={12} mt={3}>
               <Stack direction="row" spacing={3}>
-                <span style={{ fontWeight: "500" }}>{t("mail")}</span>
-                <a className="phoneNumbersFooter" href="bhom8@mail.ru">
+                <span className="infoSpan">{t("mail")}</span>
+                <a
+                  className="phoneNumbersFooter"
+                  style={{ fontFamily: "fontRegular", fontSize: "16px" }}
+                  href="bhom8@mail.ru"
+                >
                   bhom8@mail.ru
                 </a>
               </Stack>
             </Grid>
             <Grid item lg={12} md={12} xs={12} sm={12} mt={3}>
               <Stack direction="row" spacing={2.5}>
-                <span style={{ fontWeight: "500" }}>{t("phone")}</span>
+                <span className="infoSpan">{t("phone")}</span>
               </Stack>
             </Grid>
             <Grid container>
@@ -117,7 +123,7 @@ const Footer = () => {
           {/* Third column ends here */}
         </Grid>
         <Grid item lg={12} md={12} sm={12} xs={12} pt={7} textAlign="center">
-          <p style={{ textTransform: "uppercase" }}>{t("title")}</p>
+          <p>{t("titlee")}</p>
         </Grid>
       </Container>
     </div>

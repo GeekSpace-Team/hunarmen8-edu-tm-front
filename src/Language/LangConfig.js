@@ -31,7 +31,8 @@ i18n
           aboutUs: "Biz barada",
           raspisaniya: "Okuw meýilnamalar",
           contactUs: "Habarlaşmak üçin",
-          title: "aşgabat şäher häkimliginiň 8-nji hünär okuw mekdebi",
+          title: "aşgabat şäher häkimliginiň 8-nji hünär-tehniki okuw mekdebi",
+          titlee: "Aşgabat şäher häkimliginiň 8-nji hünär-tehniki okuw mekdebi",
           adress: "Salgysy:",
           addres: "Aşgabat şäheri, Görogly köçesi, 91 (20)",
           mail: "Elektron poçta:",
@@ -60,7 +61,7 @@ i18n
           time: "\u00a0\u00a0\u00a0\u00a0\u00a01,5 ýyl\u00a0\u00a0\u00a0\u00a0\u00a0",
           timee:
             "\u00a0\u00a0\u00a0\u00a0\u00a010 aý\u00a0\u00a0\u00a0\u00a0\u00a0",
-          come: "BIZE okamaga geliň !",
+          come: "BIZE okamaga geliň!",
           kontact: "HABARLAŞMAK üçin ",
         },
       },
@@ -90,6 +91,8 @@ i18n
           contactUs: "Наши контакты",
           title:
             "профессионально-техническая школа №8 хякимлика города ашгабат",
+          titlee:
+            "Профессионально-техническая школа №8 хякимлика города ашгабат",
           adress: "Наш адрес:",
           addres: "гор. Ашгабат, улица Героглы, 91",
           mail: "Электронной почты:",
@@ -116,7 +119,7 @@ i18n
           time: "\u00a0\u00a0\u00a0\u00a0\u00a01,5 год\u00a0\u00a0\u00a0\u00a0\u00a0",
           timee:
             "\u00a0\u00a0\u00a0\u00a0\u00a010 месяц\u00a0\u00a0\u00a0\u00a0\u00a0",
-          come: "ПРИХОДИТЕ  к нам учиться !",
+          come: "ПРИХОДИТЕ  к нам учиться!",
         },
       },
     },

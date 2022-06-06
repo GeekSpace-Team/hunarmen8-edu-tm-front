@@ -7,6 +7,8 @@ export const Nav = styled.nav`
   justify-content: space-between;
   color: #000;
   height: 70px;
+  width: 100%;
+  padding-left: 14%;
   display: flex;
   align-items: center;
   margin-top: 50px;
@@ -55,6 +57,9 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
   @media screen and (max-width: 768px) {
     display: none;
   }

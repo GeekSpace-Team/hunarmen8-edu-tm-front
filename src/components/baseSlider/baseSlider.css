@@ -1,6 +1,6 @@
 .baseSliderImg img {
-  object-fit: cover;
-  height: 500px;
+  /* object-fit: cover; */
+  height: 600px;
 }
 @media screen and (max-width: 768px) {
   .baseSliderImg {

@@ -80,11 +80,11 @@ const Header = () => {
         </Stack>
         <div className="headerSection">
           <Stack direction="row" spacing={10} alignItems="center">
-            <label>
-              aşgabat şäher häkimliginiň <br /> 8-nji hünär okuw mekdebi
+            <label style={{ fontFamily: "boldFont" }}>
+              aşgabat şäher häkimliginiň <br /> 8-nji hünär-tehniki okuw mekdebi
             </label>
             <img src="./image/Gerb.svg" alt="#" />
-            <label>
+            <label style={{ fontFamily: "boldFont" }}>
               профессионально-техническая <br /> школа №8 хякимлика города{" "}
               <br /> ашгабат
             </label>
@@ -95,10 +95,10 @@ const Header = () => {
         <div className="headerSectionMedia">
           <Stack direction={"column"} alignItems="center" spacing={3}>
             <img src="./image/Gerb.svg" style={{ width: "100px" }} alt="#" />
-            <label>
-              aşgabat şäher häkimliginiň <br /> 8-nji hünär okuw mekdebi
+            <label style={{ fontFamily: "boldFont" }}>
+              aşgabat şäher häkimliginiň <br /> 8-nji hünär-tehniki okuw mekdebi
             </label>
-            <label>
+            <label style={{ fontFamily: "boldFont" }}>
               профессионально-техническая <br /> школа №8 хякимлика города{" "}
               <br /> ашгабат
             </label>

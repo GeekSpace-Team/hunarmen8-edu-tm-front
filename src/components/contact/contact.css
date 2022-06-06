@@ -2,9 +2,11 @@
   margin-top: 170px;
   margin-bottom: 50px;
 }
+
 .contactMediaTitle label {
-  font-size: 2.5vw;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "fontRegular";
   text-transform: uppercase;
 }
 .phoneNumbers {
@@ -15,6 +17,10 @@
 .phoneNumbersContact {
   color: #000;
   text-decoration: none;
+}
+.mediaListBus {
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .forContact {
   font-size: 45px;
@@ -39,10 +45,23 @@
   }
   .mediaListBuss {
     display: block;
+    font-weight: 600;
   }
   .contactMediaTitle label {
     font-size: 23px;
     margin-top: 150px;
+  }
+  .infoMedia {
+    margin-left: -11%;
+  }
+  .mediamedia {
+    margin-top: 220px;
+  }
+  .adresMedia {
+    margin-bottom: -45px;
+  }
+  .pochtaMedia {
+    margin-top: -50px;
   }
   .contactMediaTitle {
     margin-bottom: -20px;
