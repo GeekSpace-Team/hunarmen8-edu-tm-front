@@ -139,12 +139,12 @@ const Professia = () => {
                 aria-label="lab API tabs example"
               >
                 <StyledTab
-                  style={{ width: "160px", marginLeft: "30px" }}
+                  style={{ marginLeft: "30px" }}
                   label={tab1.replace(/ /g, "\u00a0")}
                   value="1"
                 />
                 <StyledTab
-                  style={{ width: "160px", marginLeft: "40px" }}
+                  style={{ marginLeft: "40px" }}
                   label={tab2.replace(/ /g, "\u00a0")}
                   value="2"
                 />
