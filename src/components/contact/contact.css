@@ -43,6 +43,9 @@
   .mediaListBus {
     display: none;
   }
+  .adresMedia p {
+    margin-left: -10%;
+  }
   .mediaListBuss {
     display: block;
     font-weight: 600;

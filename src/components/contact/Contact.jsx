@@ -104,11 +104,11 @@ const Contact = () => {
                 №
                 6,8,10,13,14,15,16,21,22,23,26,30,38,40,49,50,51,56,58,61,62,63
               </span>
-              <span className="mediaListBuss">
+              <pre className="mediaListBuss">
                 № 6,8,10,13,14,15,16,21,22,23,26,30,38,40,49,50,51,
                 <br />
                 56,58,61,62,63
-              </span>
+              </pre>
             </Stack>
           </Grid>
         </Grid>
