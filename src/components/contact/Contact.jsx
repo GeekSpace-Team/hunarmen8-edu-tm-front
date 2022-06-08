@@ -20,7 +20,7 @@ const Contact = () => {
     <div className="contact">
       <Container maxWidth="lg">
         <Grid container pl={7} className="infoMedia">
-          <Grid item lg={6} md={6} xs={12} sm={12}>
+          <Grid item lg={5.5} md={5.5} xs={12} sm={12}>
             <Grid item lg={12} md={12} xs={12} sm={12} mb={7}>
               <Stack className="adresMedia" direction={"row"} spacing={2}>
                 <span style={{ fontWeight: "500" }}>{t("adress")}</span>
@@ -59,7 +59,7 @@ const Contact = () => {
             </Grid>
           </Grid>
 
-          <Grid item lg={6} md={6} xs={12} sm={12} mt={-12}>
+          <Grid item lg={6.5} md={6.5} xs={12} sm={12} mt={-12}>
             <Grid container>
               <Grid item lg={12} md={12} xs={2.5} sm={2.5}></Grid>
               <Grid item lg={12} md={12} sm={8.5} xs={8.5} pb={4}>
