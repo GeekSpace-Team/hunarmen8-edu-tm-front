@@ -58,47 +58,53 @@ const Contact = () => {
               </Stack>
             </Grid>
           </Grid>
+
+          <Grid item lg={6} md={6} xs={12} sm={12} mt={-12}>
+            <Grid container>
+              <Grid item lg={12} md={12} xs={2.5} sm={2.5}></Grid>
+              <Grid item lg={12} md={12} sm={8.5} xs={8.5} pb={4}>
+                <Stack
+                  direction="column"
+                  spacing={0.5}
+                  className="contactMediaTitle"
+                >
+                  <label>{t("kontact")}</label>
+                  <img
+                    src="./image/Line.svg"
+                    alt="#"
+                    style={{ width: "95px" }}
+                  />
+                </Stack>
+              </Grid>
+            </Grid>
+            <iframe
+              className="mediaMap"
+              src="https://yandex.ru/map-widget/v1/-/CCUJIGBjwC"
+              style={{
+                outline: "none",
+                border: "none",
+                marginBottom: "50px",
+              }}
+              width="100%"
+              height="330"
+            ></iframe>
+          </Grid>
         </Grid>
       </Container>
 
       <Grid container className="mediamedia">
         <Grid item lg={6} md={6} xs={12} sm={12} mt={-15}></Grid>
-        <Grid item lg={6} md={6} xs={12} sm={12} mt={-43}>
-          <Grid container>
-            <Grid item lg={12} md={12} xs={2.5} sm={2.5}></Grid>
-            <Grid item lg={12} md={12} sm={8.5} xs={8.5} pb={4}>
-              <Stack
-                direction="column"
-                spacing={0.5}
-                className="contactMediaTitle"
-              >
-                <label>{t("kontact")}</label>
-                <img src="./image/Line.svg" alt="#" style={{ width: "95px" }} />
-              </Stack>
-            </Grid>
-          </Grid>
-          <iframe
-            src="https://yandex.ru/map-widget/v1/-/CCUJIGBjwC"
-            style={{
-              outline: "none",
-              border: "none",
-              marginBottom: "50px",
-            }}
-            width="100%"
-            height="370"
-          ></iframe>
-        </Grid>
       </Grid>
       <Grid container>
-        <Grid item lg={4} md={4} xs={1} sm={1}></Grid>
-        <Grid item lg={8} md={8} xs={10} sm={10}>
+        <Grid item lg={4.5} md={4.5} xs={1} sm={1}></Grid>
+        <Grid item lg={6.5} md={6.5} xs={10} sm={10}>
           <p>
             <b style={{ fontFamily: "fontMedium" }}>{t("busDirection")}</b>
           </p>
         </Grid>
         <Grid container>
-          <Grid item lg={4} md={4} xs={1} sm={1}></Grid>
-          <Grid item lg={8} md={8} xs={10} sm={10} mt={2}>
+          <Grid item lg={4.5} md={4.5} xs={1} sm={1}></Grid>
+          <Grid item lg={6.5} md={6.5} xs={10} sm={10} mt={2}>
             <Stack direction="column" className="digitalBus" spacing={2}>
               <span className="mediaListBus">
                 №

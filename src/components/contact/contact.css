@@ -58,7 +58,7 @@
     margin-left: -11%;
   }
   .mediamedia {
-    margin-top: 220px;
+    margin-top: -30px;
   }
   .adresMedia {
     margin-bottom: -45px;
@@ -68,5 +68,10 @@
   }
   .contactMediaTitle {
     margin-bottom: -20px;
+  }
+  .mediaMap {
+    height: 200px;
+    padding-right: -50%;
+    width: 108%;
   }
 }

@@ -65,16 +65,17 @@ const Header = () => {
         <Stack direction="row" spacing={1} className="Flag">
           <img
             src="./image/RuFlag.svg"
+            id="flagg"
             onClick={() => langChange("ru")}
             className={firstLangClass}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", width: "45px", marginLeft: "-15px" }}
             alt="#"
           />
           <img
             src="./image/TmFlag.svg"
             onClick={() => langChange("tm")}
             className={secondLangClass}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", width: "45px" }}
             alt="#"
           />
         </Stack>

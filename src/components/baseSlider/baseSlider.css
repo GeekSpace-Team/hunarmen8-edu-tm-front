@@ -3,7 +3,7 @@
   height: 600px;
 }
 @media screen and (max-width: 768px) {
-  .baseSliderImg {
-    height: 400px;
+  .baseSliderImg img {
+    height: 350px;
   }
 }
