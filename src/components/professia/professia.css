@@ -2,6 +2,11 @@
   background: #fff;
   padding-bottom: 40px;
 }
+.professiaContainer {
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
 .proffImg img {
   height: 320px;
 }

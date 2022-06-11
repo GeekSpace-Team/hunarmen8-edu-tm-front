@@ -21,10 +21,19 @@ const Contact = () => {
       <Container maxWidth="lg">
         <Grid container pl={7} className="infoMedia">
           <Grid item lg={5.5} md={5.5} xs={12} sm={12}>
-            <Grid item lg={12} md={12} xs={12} sm={12} mb={7}>
+            <Grid item lg={12} md={12} xs={12} sm={12} mb={5}>
               <Stack className="adresMedia" direction={"row"} spacing={2}>
                 <span style={{ fontWeight: "500" }}>{t("adress")}</span>
                 <p>{t("addres")}</p>
+              </Stack>
+            </Grid>
+
+            <Grid item lg={12} md={12} xs={12} sm={12} mb={5}>
+              <Stack className="pochtaMedia" direction="row" spacing={3}>
+                <span style={{ fontWeight: "500" }}>{t("mail")}</span>
+                <a className="phoneNumbersContact" href="bhom8@mail.ru">
+                  bhom8@mail.ru
+                </a>
               </Stack>
             </Grid>
 
@@ -48,14 +57,6 @@ const Contact = () => {
                   </a>
                 </Stack>
               </Grid>
-            </Grid>
-            <Grid item lg={12} md={12} xs={12} sm={12} mt={8}>
-              <Stack className="pochtaMedia" direction="row" spacing={3}>
-                <span style={{ fontWeight: "500" }}>{t("mail")}</span>
-                <a className="phoneNumbersContact" href="bhom8@mail.ru">
-                  bhom8@mail.ru
-                </a>
-              </Stack>
             </Grid>
           </Grid>
 
@@ -96,15 +97,13 @@ const Contact = () => {
         <Grid item lg={6} md={6} xs={12} sm={12} mt={-15}></Grid>
       </Grid>
       <Grid container>
-        <Grid item lg={4.5} md={4.5} xs={1} sm={1}></Grid>
-        <Grid item lg={6.5} md={6.5} xs={10} sm={10}>
+        <Grid item lg={12} md={12} xs={12} sm={12} textAlign="center">
           <p>
             <b style={{ fontFamily: "fontMedium" }}>{t("busDirection")}</b>
           </p>
         </Grid>
         <Grid container>
-          <Grid item lg={4.5} md={4.5} xs={1} sm={1}></Grid>
-          <Grid item lg={6.5} md={6.5} xs={10} sm={10} mt={2}>
+          <Grid item lg={12} md={12} xs={12} sm={12} textAlign="center" mt={2}>
             <Stack direction="column" className="digitalBus" spacing={2}>
               <span className="mediaListBus">
                 №

@@ -41,7 +41,7 @@ const ComeToLearn = () => {
       </Grid>
       <Container maxWidth="lg">
         <Grid container spacing={5}>
-          <Grid item lg={6} md={6} xs={12} sm={12} mt={3} mb={3}>
+          <Grid item lg={6} md={6} xs={12} sm={12} mt={3}>
             <Carousel
               className="main-slide comeLearn"
               showThumbs={false}

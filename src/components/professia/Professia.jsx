@@ -92,7 +92,7 @@ const Professia = () => {
 
   const tab2 = t("time");
   return (
-    <div className="professiaContainer">
+    <div id="professia" className="professiaContainer">
       <Container maxWidth="lg">
         <Grid container>
           <Grid item lg={12} md={12} xs={2.5} sm={2.5}></Grid>

@@ -180,71 +180,73 @@ const Navbar = () => {
           >
             <Grid item={true} xs={7}>
               <Stack justifyContent={"center"} direction={"row"}>
-                <NavMenu>
-                  <NavLink
-                    spy={true}
-                    smooth={true}
-                    to="header"
-                    activeClass="activeClass"
-                    onClick={handleCloseNavMenu}
-                    style={{ cursor: "pointer" }}
-                    className="navBarItem"
-                    style={{
-                      fontWeight: "500",
-                      textDecoration: "underline",
-                      textUnderlineOffset: "7px",
-                      fontFamily: "fontRegular",
-                      fontSize: "20px",
-                    }}
-                  >
-                    {t("homePage")}
-                  </NavLink>
-                  <NavLink
-                    spy={true}
-                    smooth={true}
-                    to="comeToLearn"
-                    activeClass="activeClass"
-                    onClick={handleCloseNavMenu}
-                    style={{
-                      cursor: "pointer",
-                      fontSize: "17px",
-                      fontFamily: "fontRegular",
-                    }}
-                    className="navBarItem"
-                  >
-                    {t("aboutUs")}
-                  </NavLink>
-                  <NavLink
-                    spy={true}
-                    smooth={true}
-                    to="professia"
-                    activeClass="activeClass"
-                    onClick={handleCloseNavMenu}
-                    style={{
-                      cursor: "pointer",
-                      fontSize: "17px",
-                      fontFamily: "fontRegular",
-                    }}
-                    className="navBarItem"
-                  >
-                    {t("raspisaniya")}
-                  </NavLink>
-                  <NavLink
-                    spy={true}
-                    smooth={true}
-                    activeClass="activeClass"
-                    onClick={handleCloseNavMenu}
-                    style={{
-                      cursor: "pointer",
-                      fontSize: "17px",
-                      fontFamily: "fontRegular",
-                    }}
-                    to="contact"
-                    className="navBarItem"
-                  >
-                    {t("contactUs")}
-                  </NavLink>
-                </NavMenu>
+                <center>
+                  <NavMenu style={{ textAlign: "center" }}>
+                    <NavLink
+                      spy={true}
+                      smooth={true}
+                      to="header"
+                      activeClass="activeClass"
+                      onClick={handleCloseNavMenu}
+                      style={{ cursor: "pointer" }}
+                      className="navBarItem"
+                      style={{
+                        fontWeight: "500",
+                        textDecoration: "underline",
+                        textUnderlineOffset: "7px",
+                        fontFamily: "fontRegular",
+                        fontSize: "20px",
+                      }}
+                    >
+                      {t("homePage")}
+                    </NavLink>
+                    <NavLink
+                      spy={true}
+                      smooth={true}
+                      to="comeToLearn"
+                      activeClass="activeClass"
+                      onClick={handleCloseNavMenu}
+                      style={{
+                        cursor: "pointer",
+                        fontSize: "17px",
+                        fontFamily: "fontRegular",
+                      }}
+                      className="navBarItem"
+                    >
+                      {t("aboutUs")}
+                    </NavLink>
+                    <NavLink
+                      spy={true}
+                      smooth={true}
+                      to="professia"
+                      activeClass="activeClass"
+                      onClick={handleCloseNavMenu}
+                      style={{
+                        cursor: "pointer",
+                        fontSize: "17px",
+                        fontFamily: "fontRegular",
+                      }}
+                      className="navBarItem"
+                    >
+                      {t("raspisaniya")}
+                    </NavLink>
+                    <NavLink
+                      spy={true}
+                      smooth={true}
+                      activeClass="activeClass"
+                      onClick={handleCloseNavMenu}
+                      style={{
+                        cursor: "pointer",
+                        fontSize: "17px",
+                        fontFamily: "fontRegular",
+                      }}
+                      to="contact"
+                      className="navBarItem"
+                    >
+                      {t("contactUs")}
+                    </NavLink>
+                  </NavMenu>
+                </center>
               </Stack>
             </Grid>
             <Grid item={true} xs={2}>
@@ -255,7 +257,6 @@ const Navbar = () => {
           </Grid>
         </Container>
       </Nav>
-
       <SwipeableDrawer
         classes={{ paper: classes.paper }}
         anchor={"right"}

@@ -123,7 +123,13 @@ const Footer = () => {
           {/* Third column ends here */}
         </Grid>
         <Grid item lg={12} md={12} sm={12} xs={12} pt={7} textAlign="center">
-          <p style={{ fontFamily: "fontRegular", fontSize: "17px" }}>
+          <p
+            style={{
+              fontFamily: "fontRegular",
+              wordSpacing: "3px",
+              fontSize: "17px",
+            }}
+          >
             {t("titlee")}
           </p>
         </Grid>
