@@ -17,6 +17,8 @@ const BaseSlider = () => {
           autoPlay={true}
           showArrows={false}
           emulateTouch={true}
+          transitionTime={3000}
+          interval={7000}
           showStatus={false}
           infiniteLoop={true}
         >

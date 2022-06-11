@@ -265,6 +265,8 @@ const Professia = () => {
               autoPlay={true}
               showArrows={false}
               emulateTouch={true}
+              interval={7000}
+              transitionTime={3000}
               showStatus={false}
               infiniteLoop={true}
             >

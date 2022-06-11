@@ -47,6 +47,8 @@ const ComeToLearn = () => {
               showThumbs={false}
               autoPlay={true}
               showArrows={false}
+              interval={7000}
+              transitionTime={3000}
               emulateTouch={true}
               showStatus={false}
               infiniteLoop={true}
@@ -75,7 +77,8 @@ const ComeToLearn = () => {
                   lineHeight: "23px",
                 }}
               >
-                {t("resmi")}8<sup>00</sup>
+                {t("resmi")}
+                <br />8<sup>00</sup>
                 {t("dan")} 18<sup>00</sup> {t("namalar")}
               </span>
               <p style={{ marginBottom: "15px", fontFamily: "fontRegular" }}>
