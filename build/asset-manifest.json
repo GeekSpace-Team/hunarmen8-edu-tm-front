@@ -1,10 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.7ff14e99.css",
-    "main.js": "/static/js/main.e14af879.js",
+    "main.js": "/static/js/main.0dd78c63.js",
     "static/media/img1.JPG": "/static/media/img1.bbacadb1eee7dd45a680.JPG",
+    "static/media/img8.jpg": "/static/media/img8.79882ad25abf8bcf6366.jpg",
     "static/media/img2.jpg": "/static/media/img2.bf5950df01fac7cce582.jpg",
+    "static/media/img5.jpg": "/static/media/img5.c332aac1126d17598eb4.jpg",
+    "static/media/img6.jpg": "/static/media/img6.cb7f71260076db41fc1a.jpg",
+    "static/media/img10.jpg": "/static/media/img10.8c051f4ec98e8760f4d2.jpg",
+    "static/media/img15.jpg": "/static/media/img15.55b802c93149929f3188.jpg",
+    "static/media/img11.jpg": "/static/media/img11.34dd6bf21a565f84ad59.jpg",
+    "static/media/img13.jpg": "/static/media/img13.43ee03ebac7b8ced4753.jpg",
+    "static/media/img12.jpg": "/static/media/img12.b708b483b63978889c00.jpg",
+    "static/media/img16.jpg": "/static/media/img16.84f216ab0bdde792d695.jpg",
+    "static/media/img18.jpg": "/static/media/img18.2fa77469c850c0bfd1f4.jpg",
+    "static/media/img19.jpg": "/static/media/img19.efa78e9ef61beb4f2d91.jpg",
+    "static/media/img9.jpg": "/static/media/img9.1d26bcd4ec7e1f0e7e33.jpg",
+    "static/media/img14.jpg": "/static/media/img14.56a6e9bd073310965882.jpg",
+    "static/media/img4.jpg": "/static/media/img4.990d2c3d1fe6dec984b5.jpg",
     "static/media/img3.jpg": "/static/media/img3.d20bf88d9ad8e5c4b24d.jpg",
+    "static/media/img7.jpg": "/static/media/img7.f204016fb0dc8df526d1.jpg",
     "static/media/Ubuntu-Light.ttf": "/static/media/Ubuntu-Light.0dd2d5986e2731a16ee7.ttf",
     "static/media/Ubuntu-LightItalic.ttf": "/static/media/Ubuntu-LightItalic.643c0a5c4ac0440c45e5.ttf",
     "static/media/Ubuntu-Italic.ttf": "/static/media/Ubuntu-Italic.fbb3310412795b02afc4.ttf",
@@ -15,10 +30,10 @@
     "static/media/Ubuntu-Bold.ttf": "/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
     "index.html": "/index.html",
     "main.7ff14e99.css.map": "/static/css/main.7ff14e99.css.map",
-    "main.e14af879.js.map": "/static/js/main.e14af879.js.map"
+    "main.0dd78c63.js.map": "/static/js/main.0dd78c63.js.map"
   },
   "entrypoints": [
     "static/css/main.7ff14e99.css",
-    "static/js/main.e14af879.js"
+    "static/js/main.0dd78c63.js"
   ]
 }

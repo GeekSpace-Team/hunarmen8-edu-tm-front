@@ -4,9 +4,10 @@ import React, { useEffect } from "react";
 import "./comeToLearn.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import img1 from "../../img/img1.JPG";
-import img2 from "../../img/img2.jpg";
-import img3 from "../../img/img3.jpg";
+import img13 from "../../img/img13.jpg";
+import img9 from "../../img/img9.jpg";
+import img14 from "../../img/img14.jpg";
+import img15 from "../../img/img15.jpg";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 import { i18n } from "../../Language/LangConfig";
@@ -54,13 +55,16 @@ const ComeToLearn = () => {
               infiniteLoop={true}
             >
               <div className="comeToLearnImg">
-                <img src={img1} alt="#" />
+                <img src={img9} alt="#" />
               </div>
               <div className="comeToLearnImg">
-                <img src={img2} alt="#" />
+                <img src={img13} alt="#" />
               </div>
               <div className="comeToLearnImg">
-                <img src={img3} alt="#" />
+                <img src={img14} alt="#" />
+              </div>
+              <div className="comeToLearnImg">
+                <img src={img15} alt="#" />
               </div>
             </Carousel>
           </Grid>

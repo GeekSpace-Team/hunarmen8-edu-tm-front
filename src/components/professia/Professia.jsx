@@ -1,8 +1,12 @@
 import { Container, Grid, Stack } from "@mui/material";
 import React, { useEffect } from "react";
-import img1 from "../../img/img1.JPG";
-import img2 from "../../img/img2.jpg";
 import img3 from "../../img/img3.jpg";
+import img4 from "../../img/img4.jpg";
+import img7 from "../../img/img7.jpg";
+import img8 from "../../img/img8.jpg";
+import img10 from "../../img/img10.jpg";
+import img11 from "../../img/img11.jpg";
+import img12 from "../../img/img12.jpg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { t } from "i18next";
@@ -271,13 +275,25 @@ const Professia = () => {
               infiniteLoop={true}
             >
               <div className="proffImg">
-                <img src={img1} alt="#" />
-              </div>
-              <div className="proffImg">
-                <img src={img2} alt="#" />
-              </div>
-              <div className="proffImg">
                 <img src={img3} alt="#" />
+              </div>
+              <div className="proffImg">
+                <img src={img4} alt="#" />
+              </div>
+              <div className="proffImg">
+                <img src={img7} alt="#" />
+              </div>
+              <div className="proffImg">
+                <img src={img8} alt="#" />
+              </div>{" "}
+              <div className="proffImg">
+                <img src={img10} alt="#" />
+              </div>{" "}
+              <div className="proffImg">
+                <img src={img11} alt="#" />
+              </div>{" "}
+              <div className="proffImg">
+                <img src={img12} alt="#" />
               </div>
             </Carousel>
           </Grid>
