@@ -34,7 +34,6 @@
   background-attachment: fixed;
 }
 
-
 .bgGlass:before {
   content: "";
   position: absolute;

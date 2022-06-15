@@ -137,16 +137,32 @@ const Navbar = () => {
       style={{ background: "#a19f9f" }}
     >
       <Stack direction={"column"}>
-        <NavLink to="header" className="mobileLink">
+        <NavLink
+          to="header"
+          style={{ textTransform: "none" }}
+          className="mobileLink"
+        >
           {t("homePage")}
         </NavLink>
-        <NavLink to="comeToLearn" className="mobileLink">
+        <NavLink
+          to="comeToLearn"
+          style={{ textTransform: "none" }}
+          className="mobileLink"
+        >
           {t("aboutUs")}
         </NavLink>
-        <NavLink to="professia" className="mobileLink salam">
-          {t("raspisaniya")}
+        <NavLink
+          to="professia"
+          style={{ textTransform: "none" }}
+          className="mobileLink"
+        >
+          {t("raspisaniyaa")}
         </NavLink>
-        <NavLink to="contact" className="mobileLink">
+        <NavLink
+          to="contact"
+          style={{ textTransform: "none" }}
+          className="mobileLink"
+        >
           {t("contactUs")}
         </NavLink>
         <br />

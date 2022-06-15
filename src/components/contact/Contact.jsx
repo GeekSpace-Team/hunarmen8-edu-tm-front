@@ -94,7 +94,7 @@ const Contact = () => {
       </Container>
 
       <Grid container className="mediamedia">
-        <Grid item lg={6} md={6} xs={12} sm={12} mt={-15}></Grid>
+        <Grid item lg={6} md={6} xs={12} sm={12} mt={-12}></Grid>
       </Grid>
       <Grid container>
         <Grid item lg={12} md={12} xs={12} sm={12} textAlign="center">
@@ -110,9 +110,9 @@ const Contact = () => {
                 6,8,10,13,14,15,16,21,22,23,26,30,38,40,49,50,51,56,58,61,62,63
               </span>
               <pre className="mediaListBuss">
-                № 6,8,10,13,14,15,16,21,22,23,26,30,38,40,49,50,51,
+                № 6,8,10,13,14,15,16,21,22,23,26,
                 <br />
-                56,58,61,62,63
+                30,38,40,49,50,51,56,58,61,62,63
               </pre>
             </Stack>
           </Grid>

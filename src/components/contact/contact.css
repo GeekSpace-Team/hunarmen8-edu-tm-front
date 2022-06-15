@@ -49,6 +49,7 @@
   .mediaListBuss {
     display: block;
     font-weight: 600;
+    margin-top: 50px;
   }
   .contactMediaTitle label {
     font-size: 23px;
@@ -58,13 +59,13 @@
     margin-left: -11%;
   }
   .mediamedia {
-    margin-top: -30px;
+    margin-top: -10px;
   }
   .adresMedia {
     margin-bottom: -45px;
   }
   .pochtaMedia {
-    margin-top: -50px;
+    margin-top: 70px;
   }
   .contactMediaTitle {
     margin-bottom: -20px;

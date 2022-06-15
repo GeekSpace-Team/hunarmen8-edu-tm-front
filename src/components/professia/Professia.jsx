@@ -175,60 +175,6 @@ const Professia = () => {
                         mt={3}
                       >
                         <p>
-                          <b>{t("professia1")}</b>
-                        </p>
-                        <hr />
-
-                        <p>
-                          <b>{t("professia3")}</b>
-                        </p>
-                        <hr />
-
-                        <p>
-                          <b>{t("professia4")}</b>
-                        </p>
-                        <hr />
-
-                        <p>
-                          <b>{t("professia5")}</b>
-                        </p>
-                        <hr />
-
-                        <p>
-                          <b>{t("professia8")}</b>
-                        </p>
-                        <hr />
-
-                        <p>
-                          <b>{t("professia10")}</b>
-                        </p>
-                        <hr />
-
-                        <p>
-                          <b>{t("professia13")}</b>
-                        </p>
-                        <hr />
-
-                        <p>
-                          <b>{t("professia14")}</b>
-                        </p>
-                        <hr />
-                        <p>
-                          <b>{t("professia15")}</b>
-                        </p>
-                        <hr />
-                      </Stack>
-                    </Grid>
-                  </TabPanel>
-                  <TabPanel value="2">
-                    <Grid item lg={12} md={12} xs={12} sm={12} mt={2}>
-                      <Stack
-                        className="professiaName"
-                        direction="column"
-                        spacing={1.5}
-                        mt={3}
-                      >
-                        <p>
                           <b>{t("professia2")}</b>
                         </p>
                         <hr />
@@ -247,12 +193,58 @@ const Professia = () => {
                           <b>{t("professia9")}</b>
                         </p>
                         <hr />
-
                         <p>
                           <b>
                             {t("professia11")}
                             {t("professia12")}
                           </b>
+                        </p>
+                        <hr />
+                        <p>
+                          <b>{t("professia15")}</b>
+                        </p>
+                        <hr />
+                      </Stack>
+                    </Grid>
+                  </TabPanel>
+                  <TabPanel value="2">
+                    <Grid item lg={12} md={12} xs={12} sm={12} mt={2}>
+                      <Stack
+                        className="professiaName"
+                        direction="column"
+                        spacing={1.5}
+                        mt={3}
+                      >
+                        <p>
+                          <b>{t("professia1")}</b>
+                        </p>
+                        <hr />{" "}
+                        <p>
+                          <b>{t("professia3")}</b>
+                        </p>
+                        <hr />{" "}
+                        <p>
+                          <b>{t("professia4")}</b>
+                        </p>
+                        <hr />{" "}
+                        <p>
+                          <b>{t("professia5")}</b>
+                        </p>
+                        <hr />
+                        <p>
+                          <b>{t("professia8")}</b>
+                        </p>
+                        <hr />
+                        <p>
+                          <b>{t("professia10")}</b>
+                        </p>
+                        <hr />
+                        <p>
+                          <b>{t("professia13")}</b>
+                        </p>
+                        <hr />
+                        <p>
+                          <b>{t("professia14")}</b>
                         </p>
                         <hr />
                       </Stack>
