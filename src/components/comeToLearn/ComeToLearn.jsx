@@ -30,7 +30,7 @@ const ComeToLearn = () => {
         <Grid item lg={4} md={4} sm={12} xs={12}></Grid>
         <Grid item lg={8} md={8} sm={12} xs={12} mb={9} className="firstWord">
           <Stack direction="column" spacing={0.5}>
-            <span>{t("come")}</span>
+            <span className="spanMedia">{t("come")}</span>
             <img
               className="lineMedia"
               src="./image/Line.svg"
@@ -80,9 +80,24 @@ const ComeToLearn = () => {
                   fontSize: "15px",
                   lineHeight: "23px",
                 }}
+                className="MediaResminama"
               >
                 {t("resmi")}
                 <br />8<sup>00</sup>
+                {t("dan")} 18<sup>00</sup> {t("namalar")}
+              </span>
+              <span
+                style={{
+                  marginTop: "20px",
+                  fontWeight: "600",
+                  marginBottom: "10px",
+                  fontFamily: "fontRegular",
+                  fontSize: "15px",
+                  lineHeight: "23px",
+                }}
+                className="mediaResminama"
+              >
+                {t("resmi")}8<sup>00</sup>
                 {t("dan")} 18<sup>00</sup> {t("namalar")}
               </span>
               <p style={{ marginBottom: "15px", fontFamily: "fontRegular" }}>

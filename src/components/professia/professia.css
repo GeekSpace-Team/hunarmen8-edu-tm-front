@@ -60,15 +60,44 @@
     padding-right: -30px;
   }
   .proffImg {
-    height: 320px;
-    /* padding-right: 40px; */
+    height: 180px;
   }
   .profffmed {
-    margin-left: -15.5%;
-    margin-right: -3%;
+    margin-left: -11.5%;
+    margin-right: -2%;
     margin-bottom: 40px;
   }
   .professiaContainer {
     margin-bottom: -130px;
+  }
+}
+@media only screen and (max-width: 625px) {
+  .proTitleMedia span {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 541px) {
+  .proTitleMedia span {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 495px) {
+  .proTitleMedia span {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 461px) {
+  .proTitleMedia span {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 431px) {
+  .proTitleMedia span {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .proTitleMedia span {
+    font-size: 14px;
   }
 }

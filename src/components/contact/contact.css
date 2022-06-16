@@ -2,6 +2,9 @@
   margin-top: 170px;
   margin-bottom: 50px;
 }
+.pnFooter {
+  margin-top: 30px;
+}
 
 .contactMediaTitle label {
   font-size: 35px;
@@ -52,7 +55,7 @@
     margin-top: 50px;
   }
   .contactMediaTitle label {
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 150px;
   }
   .infoMedia {
@@ -74,5 +77,18 @@
     height: 200px;
     padding-right: -50%;
     width: 108%;
+  }
+}
+/* @media only screen and (max-width: 600px) {
+  .pnFooter {
+    margin-top: -100px;
+  }
+  .namename {
+    margin-top: 50px;
+  }
+} */
+@media only screen and (max-width: 450px) {
+  .spanMedia {
+    font-size: 15px;
   }
 }

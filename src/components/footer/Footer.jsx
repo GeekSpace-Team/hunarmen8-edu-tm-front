@@ -80,7 +80,7 @@ const Footer = () => {
             <Grid item lg={12} md={12} xs={12} sm={12}>
               <Stack direction={"row"} spacing={2}>
                 <span className="infoSpan">{t("adress")}</span>
-                <p style={{ fontFamily: "fontRegular", fontSize: "16px" }}>
+                <p style={{ fontFamily: "fontRegular", fontSize: "15px" }}>
                   {t("addres")}
                 </p>
               </Stack>
@@ -103,8 +103,8 @@ const Footer = () => {
               </Stack>
             </Grid>
             <Grid container>
-              <Grid item lg={5} md={5} xs={12} sm={12}></Grid>
-              <Grid item lg={7} md={7} xs={7} sm={7} mt={-2.5}>
+              <Grid item lg={5} md={5} xs={4.5} sm={4.5}></Grid>
+              <Grid item lg={7} md={7} xs={6} sm={6} mt={-6.1}>
                 <Stack spacing={2} className="pnFooter">
                   <a className="phoneNumbersFooter" href="tel:+99312 92 73 08">
                     +(993) 12 92 73 08
@@ -123,15 +123,16 @@ const Footer = () => {
           {/* Third column ends here */}
         </Grid>
         <Grid item lg={12} md={12} sm={12} xs={12} pt={7} textAlign="center">
-          <p
+          <span
+            className="FooterTitttle"
             style={{
               fontFamily: "fontRegular",
               wordSpacing: "3px",
-              fontSize: "17px",
+              fontSize: "18px",
             }}
           >
             {t("titlee")}
-          </p>
+          </span>
         </Grid>
       </Container>
     </div>

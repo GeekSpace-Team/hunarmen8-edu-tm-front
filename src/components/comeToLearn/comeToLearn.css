@@ -12,6 +12,9 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+.mediaResminama {
+  display: none;
+}
 
 .hreff {
   width: 10%;
@@ -41,6 +44,9 @@ h3 {
   .professiaImg {
     height: 400px;
   }
+  .mediaResminama {
+    display: block;
+  }
   .comeTitle {
     font-size: 25px;
   }
@@ -57,5 +63,11 @@ h3 {
   }
   .comeLearn {
     margin-top: -50px;
+  }
+  .MediaResminama {
+    display: none;
+  }
+  .comeToLearnImg {
+    height: 180px;
   }
 }

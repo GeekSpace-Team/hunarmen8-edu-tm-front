@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import img3 from "../../img/img3.jpg";
 import img4 from "../../img/img4.jpg";
 import img7 from "../../img/img7.jpg";
-import img8 from "../../img/img8.jpg";
+// import img8 from "../../img/img8.jpg";
 import img10 from "../../img/img10.jpg";
 import img11 from "../../img/img11.jpg";
 import img12 from "../../img/img12.jpg";
@@ -109,7 +109,7 @@ const Professia = () => {
             className="proTitleMedia"
           >
             <Stack spacing={0.5}>
-              <span>{t("okuw")}</span>
+              <span className="spanMediaa">{t("okuw")}</span>
               <img src="./image/Line.svg" alt="#" style={{ width: "110px" }} />
             </Stack>
           </Grid>
@@ -275,15 +275,13 @@ const Professia = () => {
               <div className="proffImg">
                 <img src={img7} alt="#" />
               </div>
-              <div className="proffImg">
+              {/* <div className="proffImg">
                 <img src={img8} alt="#" />
-              </div>{" "}
-              <div className="proffImg">
-                <img src={img10} alt="#" />
-              </div>{" "}
-              <div className="proffImg">
+              </div>{" "} */}
+
+              {/* <div className="proffImg">
                 <img src={img11} alt="#" />
-              </div>{" "}
+              </div>{" "} */}
               <div className="proffImg">
                 <img src={img12} alt="#" />
               </div>

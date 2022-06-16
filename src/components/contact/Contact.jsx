@@ -24,7 +24,7 @@ const Contact = () => {
             <Grid item lg={12} md={12} xs={12} sm={12} mb={5}>
               <Stack className="adresMedia" direction={"row"} spacing={2}>
                 <span style={{ fontWeight: "500" }}>{t("adress")}</span>
-                <p>{t("addres")}</p>
+                <span className="spanMedia">{t("addres")}</span>
               </Stack>
             </Grid>
 
@@ -43,8 +43,8 @@ const Contact = () => {
               </Stack>
             </Grid>
             <Grid container>
-              <Grid item lg={3} md={3} xs={12} sm={12}></Grid>
-              <Grid item lg={9} md={9} xs={7} sm={7} mt={-2.5}>
+              <Grid item lg={3} md={3} xs={5.5} sm={5.5}></Grid>
+              <Grid item lg={9} md={9} xs={6} sm={6} mt={-6.1}>
                 <Stack spacing={0.5} className="pnFooter">
                   <a className="phoneNumbersContact" href="tel:+99312 92 73 08">
                     +(993) 12 92 73 08

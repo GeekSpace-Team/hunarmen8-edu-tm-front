@@ -37,6 +37,7 @@
 @media only screen and (max-width: 768px) {
   .footerText {
     padding-bottom: 10px;
+    font-size: 16px;
   }
   .footerDeartment {
     padding-top: 40px;
