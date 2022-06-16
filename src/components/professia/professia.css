@@ -59,8 +59,15 @@
     padding-left: 20px;
     padding-right: -30px;
   }
+  .responsive img {
+    height: 200px;
+  }
+  .responsive {
+    margin-bottom: 120px;
+  }
   .proffImg {
-    height: 180px;
+    width: 100%;
+    height: auto;
   }
   .profffmed {
     margin-left: -11.5%;

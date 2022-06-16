@@ -5,6 +5,9 @@
 .comeToLearnImg {
   height: 320px;
 }
+.responsive {
+  height: 320px;
+}
 
 .firstWord span {
   font-size: 35px;
@@ -67,7 +70,14 @@ h3 {
   .MediaResminama {
     display: none;
   }
+  .responsive {
+    height: 100px;
+  }
+  .responsive img {
+    height: 200px;
+  }
   .comeToLearnImg {
-    height: 180px;
+    max-width: 100%;
+    height: auto;
   }
 }

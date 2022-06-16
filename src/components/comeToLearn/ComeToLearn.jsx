@@ -43,30 +43,32 @@ const ComeToLearn = () => {
       <Container maxWidth="lg">
         <Grid container spacing={5}>
           <Grid item lg={6} md={6} xs={12} sm={12} mt={3}>
-            <Carousel
-              className="main-slide comeLearn"
-              showThumbs={false}
-              autoPlay={true}
-              showArrows={false}
-              interval={7000}
-              transitionTime={3000}
-              emulateTouch={true}
-              showStatus={false}
-              infiniteLoop={true}
-            >
-              <div className="comeToLearnImg">
-                <img src={img9} alt="#" />
-              </div>
-              <div className="comeToLearnImg">
-                <img src={img13} alt="#" />
-              </div>
-              <div className="comeToLearnImg">
-                <img src={img14} alt="#" />
-              </div>
-              <div className="comeToLearnImg">
-                <img src={img15} alt="#" />
-              </div>
-            </Carousel>
+            <div className="responsive">
+              <Carousel
+                className="main-slide comeLearn"
+                showThumbs={false}
+                autoPlay={true}
+                showArrows={false}
+                interval={7000}
+                transitionTime={3000}
+                emulateTouch={true}
+                showStatus={false}
+                infiniteLoop={true}
+              >
+                <div className="comeToLearnImg">
+                  <img src={img9} alt="#" />
+                </div>
+                <div className="comeToLearnImg">
+                  <img src={img13} alt="#" />
+                </div>
+                <div className="comeToLearnImg">
+                  <img src={img14} alt="#" />
+                </div>
+                <div className="comeToLearnImg">
+                  <img src={img15} alt="#" />
+                </div>
+              </Carousel>
+            </div>
           </Grid>
           <Grid item lg={6} md={6} xs={12} sm={12} mt={-7}>
             <Stack>

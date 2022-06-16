@@ -255,37 +255,39 @@ const Professia = () => {
             </Grid>
           </Grid>
           <Grid item lg={6} md={6} xs={12} sm={12} pt={4} pl={5}>
-            <Carousel
-              className="main-slide profffmed"
-              showThumbs={false}
-              autoPlay={true}
-              showArrows={false}
-              emulateTouch={true}
-              interval={7000}
-              transitionTime={3000}
-              showStatus={false}
-              infiniteLoop={true}
-            >
-              <div className="proffImg">
-                <img src={img3} alt="#" />
-              </div>
-              <div className="proffImg">
-                <img src={img4} alt="#" />
-              </div>
-              <div className="proffImg">
-                <img src={img7} alt="#" />
-              </div>
-              {/* <div className="proffImg">
+            <div className="responsive">
+              <Carousel
+                className="main-slide profffmed"
+                showThumbs={false}
+                autoPlay={true}
+                showArrows={false}
+                emulateTouch={true}
+                interval={7000}
+                transitionTime={3000}
+                showStatus={false}
+                infiniteLoop={true}
+              >
+                <div className="proffImg">
+                  <img src={img3} alt="#" />
+                </div>
+                <div className="proffImg">
+                  <img src={img4} alt="#" />
+                </div>
+                <div className="proffImg">
+                  <img src={img7} alt="#" />
+                </div>
+                {/* <div className="proffImg">
                 <img src={img8} alt="#" />
               </div>{" "} */}
 
-              {/* <div className="proffImg">
+                {/* <div className="proffImg">
                 <img src={img11} alt="#" />
               </div>{" "} */}
-              <div className="proffImg">
-                <img src={img12} alt="#" />
-              </div>
-            </Carousel>
+                <div className="proffImg">
+                  <img src={img12} alt="#" />
+                </div>
+              </Carousel>
+            </div>
           </Grid>
         </Grid>
       </Container>

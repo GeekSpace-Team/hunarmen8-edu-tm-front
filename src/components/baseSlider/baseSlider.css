@@ -1,9 +1,13 @@
 .baseSliderImg img {
-  /* object-fit: cover; */
   height: 600px;
 }
+
 @media screen and (max-width: 768px) {
-  .baseSliderImg img {
-    height: 230px;
+  .responsivee img {
+    height: 250px;
+  }
+  .baseSliderImg {
+    height: auto;
+    width: 100%;
   }
 }
