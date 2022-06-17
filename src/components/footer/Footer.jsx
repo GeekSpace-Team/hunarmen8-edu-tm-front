@@ -76,7 +76,7 @@ const Footer = () => {
           <Grid item lg={1} md={1}></Grid>
 
           {/* Third column start here */}
-          <Grid item lg={4} md={4} sm={12} xs={12}>
+          <Grid item lg={4} md={4} sm={12} xs={12} className="gorunmeMedia">
             <Grid item lg={12} md={12} xs={12} sm={12}>
               <Stack direction={"row"} spacing={2}>
                 <span className="infoSpan">{t("adress")}</span>
@@ -119,6 +119,43 @@ const Footer = () => {
               </Grid>
             </Grid>
           </Grid>
+
+          {/* third column media starts here */}
+          <div className="mediaStackStart">
+            <Stack direction="row" spacing={1} mb={3}>
+              <span className="infoSpan">{t("adress")}</span>
+              <p style={{ fontFamily: "fontRegular", fontSize: "15px" }}>
+                {t("addres")}
+              </p>
+            </Stack>
+            <Stack direction="row" className="generalStack">
+              <Stack direction="column" className="firstRowStack" spacing={5}>
+                <span className="infoSpan">{t("mail")}</span>
+                <span className="infoSpan">{t("phone")}</span>
+              </Stack>
+              <Stack direction="column" spacing={5} className="secondRowStack">
+                <a
+                  className="phoneNumbersFooter"
+                  style={{ fontFamily: "fontRegular", fontSize: "16px" }}
+                  href="mailto:bhom8@mail.ru"
+                >
+                  bhom8@mail.ru
+                </a>
+                <Stack direction="column" spacing={2}>
+                  <a className="phoneNumbersFooter" href="tel:+99312 92 73 08">
+                    +(993) 12 92 73 08
+                  </a>
+                  <a className="phoneNumbersFooter" href="tel:+99312 92 47 83">
+                    +(993) 12 92 47 83
+                  </a>
+                  <a className="phoneNumbersFooter" href="tel:+99312 92 47 89">
+                    +(993) 12 92 47 89
+                  </a>
+                </Stack>
+              </Stack>
+            </Stack>
+          </div>
+          {/* third column media ends here */}
 
           {/* Third column ends here */}
         </Grid>

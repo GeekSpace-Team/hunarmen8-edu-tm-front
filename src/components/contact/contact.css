@@ -36,6 +36,7 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .mediaListBuss {
   display: none;
 }
@@ -52,6 +53,9 @@
     padding-top: 130px;
     margin-bottom: -30px;
   }
+  .kon {
+    display: none;
+  }
   .adressmedia {
     display: block;
   }
@@ -63,6 +67,11 @@
   }
   .mediaListBus {
     display: none;
+  }
+  .phnimber {
+    text-decoration: none;
+    color: #000;
+    font-family: "fontRegular";
   }
   .adresMedia p {
     margin-left: -10%;

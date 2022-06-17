@@ -20,8 +20,8 @@ const Contact = () => {
     <div className="contact">
       <Container maxWidth="lg">
         <Grid container className="infoMedia">
-          <Grid item lg={5.5} md={5.5} xs={12} sm={12}>
-            <Grid item lg={12} md={12} xs={12} sm={12} mb={5} className="kon">
+          <Grid item lg={5.5} md={5.5} xs={12} sm={12} className="kon">
+            <Grid item lg={12} md={12} xs={12} sm={12} mb={5}>
               <Stack className="adresMedia" direction={"row"} spacing={2}>
                 <span style={{ fontWeight: "500" }}>{t("adress")}</span>
                 <span className="spanMedia">{t("addres")}</span>
@@ -59,6 +59,43 @@ const Contact = () => {
               </Grid>
             </Grid>
           </Grid>
+
+          {/* media section starts here */}
+          <div className="mediaStackStart">
+            <Stack direction="row" spacing={1} mb={3}>
+              <span className="phnimber">{t("adress")}</span>
+              <p style={{ fontFamily: "fontRegular", fontSize: "15px" }}>
+                {t("addres")}
+              </p>
+            </Stack>
+            <Stack direction="row" className="generalStack">
+              <Stack direction="column" className="firstRowStack" spacing={5}>
+                <span className="phnimber">{t("mail")}</span>
+                <span className="phnimber">{t("phone")}</span>
+              </Stack>
+              <Stack direction="column" spacing={5} className="secondRowStack">
+                <a
+                  className="phnimber"
+                  style={{ fontFamily: "fontRegular", fontSize: "16px" }}
+                  href="mailto:bhom8@mail.ru"
+                >
+                  bhom8@mail.ru
+                </a>
+                <Stack direction="column" spacing={2}>
+                  <a className="phnimber" href="tel:+99312 92 73 08">
+                    +(993) 12 92 73 08
+                  </a>
+                  <a className="phnimber" href="tel:+99312 92 47 83">
+                    +(993) 12 92 47 83
+                  </a>
+                  <a className="phnimber" href="tel:+99312 92 47 89">
+                    +(993) 12 92 47 89
+                  </a>
+                </Stack>
+              </Stack>
+            </Stack>
+          </div>
+          {/* media section ends here */}
 
           <Grid item lg={6.5} md={6.5} xs={12} sm={12} mt={-12}>
             <Grid container>

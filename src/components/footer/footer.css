@@ -30,6 +30,12 @@
   font-size: 19px;
   font-family: "ubuntuLight";
 }
+.generalStack {
+  display: none;
+}
+.mediaStackStart {
+  display: none;
+}
 .phoneNumbersFooter {
   color: #fff;
   text-decoration: none;
@@ -39,9 +45,16 @@
     padding-bottom: 10px;
     font-size: 16px;
   }
+  .gorunmeMedia {
+    display: none;
+  }
   .footerDeartment {
     padding-top: 40px;
     margin-bottom: 40px;
+  }
+  .mediaStackStart {
+    font-size: 15px;
+    display: block;
   }
   .footerDeartment li {
     margin-bottom: -12px;
@@ -54,5 +67,19 @@
   }
   .footer {
     padding-bottom: 40px;
+  }
+
+  .generalStack {
+    width: 100%;
+    font-size: 15px;
+    display: block;
+  }
+  .firstRowStack {
+    width: 50%;
+    font-size: 15px;
+  }
+  .secondRowStack {
+    font-size: 15px;
+    width: 50%;
   }
 }
