@@ -96,8 +96,13 @@ const Navbar = () => {
     var directions = e.detail.directions;
     var x = e.detail.x;
     var y = e.detail.y;
-
-    if (directions.left) {
+    if (
+      e.detail.target.className === "baseSliderImg" ||
+      e.detail.target.className === "comeToLearnImg" ||
+      e.detail.target.className === "proffImg"
+    ) {
+      setOpen(false);
+    } else if (directions.left) {
       setOpen(true);
     }
     // console.log("Started horizontally at", x[0], "and ended at", x[1]);
