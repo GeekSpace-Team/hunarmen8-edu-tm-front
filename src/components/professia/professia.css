@@ -21,6 +21,9 @@
   font-family: "fontRegular";
   text-transform: uppercase;
 }
+.profTitleMedia {
+  display: none;
+}
 .professiaName {
   padding-left: 30px;
 }
@@ -39,6 +42,23 @@
 @media only screen and (max-width: 768px) {
   .proffMedia span {
     font-size: 23px;
+  }
+  .proTitleMedia {
+    display: none;
+  }
+  .profTitleMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profTitleMedia span {
+    font-size: 23px;
+    font-family: "fontRegular";
+    display: block;
+    font-weight: 700;
+  }
+  .lineContainer {
+    margin-top: -13px;
   }
   .professiaName {
     margin-left: -30px;
@@ -76,35 +96,5 @@
   }
   .professiaContainer {
     margin-bottom: -130px;
-  }
-}
-@media only screen and (max-width: 625px) {
-  .proTitleMedia span {
-    font-size: 22px;
-  }
-}
-@media only screen and (max-width: 541px) {
-  .proTitleMedia span {
-    font-size: 20px;
-  }
-}
-@media only screen and (max-width: 495px) {
-  .proTitleMedia span {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 461px) {
-  .proTitleMedia span {
-    font-size: 17px;
-  }
-}
-@media only screen and (max-width: 431px) {
-  .proTitleMedia span {
-    font-size: 15px;
-  }
-}
-@media only screen and (max-width: 399px) {
-  .proTitleMedia span {
-    font-size: 14px;
   }
 }

@@ -1,38 +1,15 @@
 import React, { useEffect, useState } from "react";
-// import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-// import IconButton from "@mui/material/IconButton";
-// import Menu from "@mui/material/Menu";
-// import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-// import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 import { i18n } from "../../Language/LangConfig";
 import { Link } from "react-scroll";
-import "./navbar.css";
-// import Drawer from "@mui/material/Drawer";
-// import Button from "@mui/material/Button";
-// import List from "@mui/material/List";
-// import Divider from "@mui/material/Divider";
-// import ListItem from "@mui/material/ListItem";
-// import ListItemButton from "@mui/material/ListItemButton";
-// import ListItemIcon from "@mui/material/ListItemIcon";
-// import ListItemText from "@mui/material/ListItemText";
-// import InboxIcon from "@mui/icons-material/MoveToInbox";
-// import MailIcon from "@mui/icons-material/Mail";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { Grid, Stack } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import styled from "styled-components";
-
-import {
-  Nav,
-  // NavLink,
-  Bars,
-  NavMenu,
-  // NavBtn,
-  // InfoContainer,
-} from "./NavbarItems";
+import { Nav, Bars, NavMenu } from "./NavbarItems";
+import "./navbar.css";
 
 const useStyles = makeStyles({
   paper: {
@@ -60,7 +37,7 @@ export const NavLink = styled(Link)`
 
 const Navbar = () => {
   const [state, setState] = React.useState({
-    left: false,
+    right: false,
   });
 
   const [firstLangClass, setFirstLangClass] = useState("langBtn");
@@ -185,8 +162,8 @@ const Navbar = () => {
     </Box>
   );
   return (
-    <>
-      <Nav className="header bgGlass">
+    <React.Fragment key={"right"}>
+      <Nav className="head bgGlass">
         <Container maxWidth="lg">
           <Grid
             container
@@ -204,7 +181,6 @@ const Navbar = () => {
                       to="header"
                       activeClass="activeClass"
                       onClick={handleCloseNavMenu}
-                      style={{ cursor: "pointer" }}
                       className="navBarItem"
                       style={{
                         fontWeight: "500",
@@ -212,6 +188,7 @@ const Navbar = () => {
                         textUnderlineOffset: "7px",
                         fontFamily: "fontRegular",
                         fontSize: "20px",
+                        cursor: "pointer",
                       }}
                     >
                       {t("homePage")}
@@ -282,7 +259,7 @@ const Navbar = () => {
       >
         {list("right")}
       </SwipeableDrawer>
-    </>
+    </React.Fragment>
   );
 };
 

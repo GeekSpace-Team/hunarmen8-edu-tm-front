@@ -103,8 +103,8 @@ const Footer = () => {
               </Stack>
             </Grid>
             <Grid container>
-              <Grid item lg={5} md={5} xs={4.5} sm={4.5}></Grid>
-              <Grid item lg={7} md={7} xs={6} sm={6} mt={-6.1}>
+              <Grid item lg={4} md={4} xs={4} sm={4}></Grid>
+              <Grid item lg={6} md={6} xs={6} sm={6} mt={-6.1}>
                 <Stack spacing={2} className="pnFooter">
                   <a className="phoneNumbersFooter" href="tel:+99312 92 73 08">
                     +(993) 12 92 73 08

@@ -46,15 +46,14 @@
   bottom: 0;
   background-color: #007632;
 }
-.header {
+.head {
   background-attachment: fixed;
 }
 .mobileLink:hover {
   color: #fff;
 }
-.header.active {
+.head.active {
   height: 16vh;
-  position: fixed;
   top: 0;
   padding-top: 20px;
   width: 100%;
@@ -104,10 +103,8 @@
   .bgGlass {
     height: 5vh;
   }
-  .header {
-    height: 5vh;
-  }
-  .header.active {
+
+  .head.active {
     height: 8vh;
     padding-bottom: 10px;
     width: 100%;

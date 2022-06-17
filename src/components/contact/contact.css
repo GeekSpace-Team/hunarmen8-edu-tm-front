@@ -33,6 +33,9 @@
 .mediaListBuss {
   display: none;
 }
+.adressmedia {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   .forContact {
@@ -42,6 +45,9 @@
     justify-content: center;
     padding-top: 130px;
     margin-bottom: -30px;
+  }
+  .adressmedia {
+    display: block;
   }
   .mediaListBus {
     display: none;
@@ -58,9 +64,7 @@
     font-size: 20px;
     margin-top: 150px;
   }
-  .infoMedia {
-    margin-left: -11%;
-  }
+
   .mediamedia {
     margin-top: -10px;
   }
@@ -76,19 +80,8 @@
   .mediaMap {
     height: 200px;
     padding-right: -50%;
-    width: 108%;
   }
-}
-/* @media only screen and (max-width: 600px) {
-  .pnFooter {
-    margin-top: -100px;
-  }
-  .namename {
-    margin-top: 50px;
-  }
-} */
-@media only screen and (max-width: 450px) {
-  .spanMedia {
-    font-size: 14px;
+  .kon {
+    display: none;
   }
 }

@@ -98,6 +98,14 @@ const Professia = () => {
   return (
     <div id="professia" className="professiaContainer">
       <Container maxWidth="lg">
+        <div className="profTitleMedia">
+          <Stack direction="column">
+            <span>{t("okuw")}</span>
+            <div className="lineContainer">
+              <img src="./image/Line.svg" alt="#" style={{ width: "70px" }} />
+            </div>
+          </Stack>
+        </div>
         <Grid container>
           <Grid item lg={12} md={12} xs={2.5} sm={2.5}></Grid>
           <Grid
@@ -276,13 +284,7 @@ const Professia = () => {
                 <div className="proffImg">
                   <img src={img7} alt="#" />
                 </div>
-                {/* <div className="proffImg">
-                <img src={img8} alt="#" />
-              </div>{" "} */}
 
-                {/* <div className="proffImg">
-                <img src={img11} alt="#" />
-              </div>{" "} */}
                 <div className="proffImg">
                   <img src={img12} alt="#" />
                 </div>
