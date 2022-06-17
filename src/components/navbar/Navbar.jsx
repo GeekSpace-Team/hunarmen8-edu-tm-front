@@ -5,11 +5,12 @@ import { useTranslation } from "react-i18next";
 import { i18n } from "../../Language/LangConfig";
 import { Link } from "react-scroll";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import { Grid, Stack } from "@mui/material";
+import { Drawer, Grid, Stack } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import styled from "styled-components";
 import { Nav, Bars, NavMenu } from "./NavbarItems";
 import "./navbar.css";
+import SwipeListener from "swipe-listener";
 
 const useStyles = makeStyles({
   paper: {
@@ -36,9 +37,7 @@ export const NavLink = styled(Link)`
 `;
 
 const Navbar = () => {
-  const [state, setState] = React.useState({
-    right: false,
-  });
+  const listener = SwipeListener(document.body);
 
   const [firstLangClass, setFirstLangClass] = useState("langBtn");
   const [secondLangClass, setSecondLangClass] = useState("langBtn");
@@ -74,26 +73,14 @@ const Navbar = () => {
     }
   }, []);
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [open, setOpen] = React.useState(false);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
   };
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event &&
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
+    setOpen(false);
   };
 
   const langChange = (ln) => {
@@ -103,15 +90,29 @@ const Navbar = () => {
   };
   const classes = useStyles();
 
+  const drawerBleeding = 56;
+
+  document.body.addEventListener("swipe", function (e) {
+    var directions = e.detail.directions;
+    var x = e.detail.x;
+    var y = e.detail.y;
+
+    if (directions.left) {
+      setOpen(true);
+    }
+    // console.log("Started horizontally at", x[0], "and ended at", x[1]);
+    // console.log("Started vertically at", y[0], "and ended at", y[1]);
+  });
+
   const list = (anchor) => (
     <Box
       sx={{
-        width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
+        width: 250,
         height: "100vh",
       }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+      onClick={toggleDrawer(true)}
+      onKeyDown={toggleDrawer(true)}
       style={{ background: "#a19f9f" }}
     >
       <Stack direction={"column"}>
@@ -245,17 +246,21 @@ const Navbar = () => {
             </Grid>
             <Grid item={true} xs={2}>
               <Stack justifyContent={"flex-end"} direction={"row"}>
-                <Bars onClick={toggleDrawer("right", true)} />
+                <Bars onClick={toggleDrawer(true)} />
               </Stack>
             </Grid>
           </Grid>
         </Container>
       </Nav>
       <SwipeableDrawer
-        anchor={"right"}
-        open={state["right"]}
-        onClose={toggleDrawer("right", false)}
-        onOpen={toggleDrawer("right", true)}
+        anchor="right"
+        open={open}
+        onClose={toggleDrawer(false)}
+        onOpen={toggleDrawer(true)}
+        disableSwipeToOpen={true}
+        ModalProps={{
+          keepMounted: true,
+        }}
       >
         {list("right")}
       </SwipeableDrawer>

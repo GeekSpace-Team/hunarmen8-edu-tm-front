@@ -10,7 +10,7 @@ import Professia from "./components/professia/Professia";
 
 function App() {
   return (
-    <React.Fragment key={"right"} className="App">
+    <React.Fragment key={"right"} className="App" id={"App"}>
       <Header />
       <Navbar />
       <BaseSlider />
