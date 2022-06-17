@@ -91,7 +91,7 @@ const Footer = () => {
                 <a
                   className="phoneNumbersFooter"
                   style={{ fontFamily: "fontRegular", fontSize: "16px" }}
-                  href="bhom8@mail.ru"
+                  href="mailto:bhom8@mail.ru"
                 >
                   bhom8@mail.ru
                 </a>

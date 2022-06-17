@@ -19,16 +19,6 @@ const Contact = () => {
   return (
     <div className="contact">
       <Container maxWidth="lg">
-        <div className="adressmedia">
-          <Stack direction={"row"} mb={-7} spacing={2}>
-            <span style={{ fontWeight: "500" }}>{t("adress")}</span>
-            <span>
-              {t("addresss")}
-              <br />
-              {t("adresss")}
-            </span>
-          </Stack>
-        </div>
         <Grid container className="infoMedia">
           <Grid item lg={5.5} md={5.5} xs={12} sm={12}>
             <Grid item lg={12} md={12} xs={12} sm={12} mb={5} className="kon">
@@ -41,7 +31,7 @@ const Contact = () => {
             <Grid item lg={12} md={12} xs={12} sm={12} mb={5}>
               <Stack className="pochtaMedia" direction="row" spacing={3}>
                 <span style={{ fontWeight: "500" }}>{t("mail")}</span>
-                <a className="phoneNumbersContact" href="bhom8@mail.ru">
+                <a className="phoneNumbersContact" href="mail:bhom8@mail.ru">
                   bhom8@mail.ru
                 </a>
               </Stack>

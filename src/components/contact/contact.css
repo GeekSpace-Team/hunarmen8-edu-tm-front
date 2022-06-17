@@ -21,6 +21,12 @@
   color: #000;
   text-decoration: none;
 }
+.spanMedia {
+  font-size: 16px;
+}
+.phoneNumbersContact {
+  font-size: 16px;
+}
 .mediaListBus {
   font-weight: 600;
   letter-spacing: 2px;
@@ -48,6 +54,12 @@
   }
   .adressmedia {
     display: block;
+  }
+  .spanMedia {
+    font-size: 15px;
+  }
+  .phoneNumbersContact {
+    font-size: 15px;
   }
   .mediaListBus {
     display: none;
@@ -80,8 +92,5 @@
   .mediaMap {
     height: 200px;
     padding-right: -50%;
-  }
-  .kon {
-    display: none;
   }
 }
