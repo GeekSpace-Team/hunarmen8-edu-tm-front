@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import BaseSlider from "./components/baseSlider/BaseSlider";
 import ComeToLearn from "./components/comeToLearn/ComeToLearn";
 import Contact from "./components/contact/Contact";
@@ -9,7 +10,7 @@ import Professia from "./components/professia/Professia";
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment key={"right"} className="App">
       <Header />
       <Navbar />
       <BaseSlider />
@@ -17,7 +18,7 @@ function App() {
       <Professia />
       <Contact />
       <Footer />
-    </div>
+    </React.Fragment>
   );
 }
 

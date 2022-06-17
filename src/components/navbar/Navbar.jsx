@@ -86,6 +86,7 @@ const Navbar = () => {
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
+      event &&
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
     ) {
@@ -162,7 +163,7 @@ const Navbar = () => {
     </Box>
   );
   return (
-    <React.Fragment key={"right"}>
+    <>
       <Nav className="head bgGlass">
         <Container maxWidth="lg">
           <Grid
@@ -251,7 +252,6 @@ const Navbar = () => {
         </Container>
       </Nav>
       <SwipeableDrawer
-        classes={{ paper: classes.paper }}
         anchor={"right"}
         open={state["right"]}
         onClose={toggleDrawer("right", false)}
@@ -259,7 +259,7 @@ const Navbar = () => {
       >
         {list("right")}
       </SwipeableDrawer>
-    </React.Fragment>
+    </>
   );
 };
 
