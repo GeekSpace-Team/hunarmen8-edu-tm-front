@@ -77,17 +77,19 @@ const Footer = () => {
 
           {/* Third column start here */}
           <Grid item lg={4} md={4} sm={12} xs={12} className="gorunmeMedia">
-            <Grid item lg={12} md={12} xs={12} sm={12}>
-              <Stack direction={"row"} spacing={2}>
-                <span className="infoSpan">{t("adress")}</span>
-                <p style={{ fontFamily: "fontRegular", fontSize: "15px" }}>
-                  {t("addres")}
-                </p>
-              </Stack>
-            </Grid>
-            <Grid item lg={12} md={12} xs={12} sm={12} mt={3}>
-              <Stack direction="row" spacing={3}>
+            <Stack direction={"row"} spacing={2}>
+              <span className="infoSpan">{t("adress")}</span>
+              <p style={{ fontFamily: "fontRegular", fontSize: "15px" }}>
+                {t("addres")}
+              </p>
+            </Stack>
+            <Stack direction="row" spacing={4} mt={4}>
+              <Stack direction="column" spacing={4}>
+                {" "}
                 <span className="infoSpan">{t("mail")}</span>
+                <span className="infoSpan">{t("phone")}</span>
+              </Stack>
+              <Stack direction="column" spacing={4}>
                 <a
                   className="phoneNumbersFooter"
                   style={{ fontFamily: "fontRegular", fontSize: "16px" }}
@@ -95,17 +97,7 @@ const Footer = () => {
                 >
                   bhom8@mail.ru
                 </a>
-              </Stack>
-            </Grid>
-            <Grid item lg={12} md={12} xs={12} sm={12} mt={3}>
-              <Stack direction="row" spacing={2.5}>
-                <span className="infoSpan">{t("phone")}</span>
-              </Stack>
-            </Grid>
-            <Grid container>
-              <Grid item lg={4} md={4} xs={4} sm={4}></Grid>
-              <Grid item lg={6} md={6} xs={6} sm={6} mt={-6.1}>
-                <Stack spacing={2} className="pnFooter">
+                <Stack direction="column" spacing={2}>
                   <a className="phoneNumbersFooter" href="tel:+99312 92 73 08">
                     +(993) 12 92 73 08
                   </a>
@@ -116,8 +108,8 @@ const Footer = () => {
                     +(993) 12 92 47 89
                   </a>
                 </Stack>
-              </Grid>
-            </Grid>
+              </Stack>
+            </Stack>
           </Grid>
 
           {/* third column media starts here */}

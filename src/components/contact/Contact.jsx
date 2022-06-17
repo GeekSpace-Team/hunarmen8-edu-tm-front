@@ -21,31 +21,20 @@ const Contact = () => {
       <Container maxWidth="lg">
         <Grid container className="infoMedia">
           <Grid item lg={5.5} md={5.5} xs={12} sm={12} className="kon">
-            <Grid item lg={12} md={12} xs={12} sm={12} mb={5}>
-              <Stack className="adresMedia" direction={"row"} spacing={2}>
-                <span style={{ fontWeight: "500" }}>{t("adress")}</span>
-                <span className="spanMedia">{t("addres")}</span>
-              </Stack>
-            </Grid>
-
-            <Grid item lg={12} md={12} xs={12} sm={12} mb={5}>
-              <Stack className="pochtaMedia" direction="row" spacing={3}>
+            <Stack className="adresMedia" direction={"row"} spacing={2}>
+              <span style={{ fontWeight: "500" }}>{t("adress")}</span>
+              <span className="spanMedia">{t("addres")}</span>
+            </Stack>
+            <Stack direction="row" spacing={3} mt={3}>
+              <Stack direction="column" spacing={3}>
                 <span style={{ fontWeight: "500" }}>{t("mail")}</span>
+                <span style={{ fontWeight: "500" }}>{t("phone")}</span>
+              </Stack>
+              <Stack direction="column" spacing={3}>
                 <a className="phoneNumbersContact" href="mail:bhom8@mail.ru">
                   bhom8@mail.ru
                 </a>
-              </Stack>
-            </Grid>
-
-            <Grid item lg={12} md={12} xs={12} sm={12} mt={3}>
-              <Stack direction="row" spacing={2.5}>
-                <span style={{ fontWeight: "500" }}>{t("phone")}</span>
-              </Stack>
-            </Grid>
-            <Grid container>
-              <Grid item lg={3} md={3} xs={4} sm={4}></Grid>
-              <Grid item lg={9} md={9} xs={6} sm={6} mt={-6.1}>
-                <Stack spacing={0.5} className="pnFooter">
+                <Stack direction="column" spacing={1}>
                   <a className="phoneNumbersContact" href="tel:+99312 92 73 08">
                     +(993) 12 92 73 08
                   </a>
@@ -56,6 +45,25 @@ const Contact = () => {
                     +(993) 12 92 47 89
                   </a>
                 </Stack>
+              </Stack>
+            </Stack>
+            <Grid item lg={12} md={12} xs={12} sm={12} mb={5}></Grid>
+
+            <Grid item lg={12} md={12} xs={12} sm={12} mb={5}>
+              <Stack
+                className="pochtaMedia"
+                direction="row"
+                spacing={3}
+              ></Stack>
+            </Grid>
+
+            <Grid item lg={12} md={12} xs={12} sm={12} mt={3}>
+              <Stack direction="row" spacing={2.5}></Stack>
+            </Grid>
+            <Grid container>
+              <Grid item lg={3} md={3} xs={4} sm={4}></Grid>
+              <Grid item lg={9} md={9} xs={6} sm={6} mt={-6.1}>
+                <Stack spacing={0.5} className="pnFooter"></Stack>
               </Grid>
             </Grid>
           </Grid>
