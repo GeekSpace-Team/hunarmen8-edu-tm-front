@@ -96,6 +96,11 @@ const Navbar = () => {
     var directions = e.detail.directions;
     var x = e.detail.x;
     var y = e.detail.y;
+
+    if (window.screen.width > 768) {
+      console.log(window.screen.width);
+      return;
+    }
     if (
       e.detail.target.className === "baseSliderImg" ||
       e.detail.target.className === "comeToLearnImg" ||
@@ -111,65 +116,63 @@ const Navbar = () => {
 
   const list = (anchor) => (
     <>
-      <div className="displayNone">
-        <Box
-          sx={{
-            width: 250,
-            height: "100vh",
-          }}
-          role="presentation"
-          onClick={toggleDrawer(true)}
-          onKeyDown={toggleDrawer(true)}
-          style={{ background: "#a19f9f" }}
-        >
-          <Stack direction={"column"}>
-            <NavLink
-              to="header"
-              style={{ textTransform: "none" }}
-              className="mobileLink"
-            >
-              {t("homePage")}
-            </NavLink>
-            <NavLink
-              to="comeToLearn"
-              style={{ textTransform: "none" }}
-              className="mobileLink"
-            >
-              {t("aboutUs")}
-            </NavLink>
-            <NavLink
-              to="professia"
-              style={{ textTransform: "none" }}
-              className="mobileLink"
-            >
-              {t("raspisaniyaa")}
-            </NavLink>
-            <NavLink
-              to="contact"
-              style={{ textTransform: "none" }}
-              className="mobileLink"
-            >
-              {t("contactUs")}
-            </NavLink>
-            <br />
-            <Stack direction={"row"} justifyContent="center" spacing={2}>
-              <img
-                src="./image/RuFlag.svg"
-                alt="#"
-                onClick={() => langChange("ru")}
-                className={firstLangClass}
-              />
+      <Box
+        sx={{
+          width: 250,
+          height: "100vh",
+        }}
+        role="presentation"
+        onClick={toggleDrawer(true)}
+        onKeyDown={toggleDrawer(true)}
+        style={{ background: "#a19f9f" }}
+      >
+        <Stack direction={"column"}>
+          <NavLink
+            to="header"
+            style={{ textTransform: "none" }}
+            className="mobileLink"
+          >
+            {t("homePage")}
+          </NavLink>
+          <NavLink
+            to="comeToLearn"
+            style={{ textTransform: "none" }}
+            className="mobileLink"
+          >
+            {t("aboutUs")}
+          </NavLink>
+          <NavLink
+            to="professia"
+            style={{ textTransform: "none" }}
+            className="mobileLink"
+          >
+            {t("raspisaniyaa")}
+          </NavLink>
+          <NavLink
+            to="contact"
+            style={{ textTransform: "none" }}
+            className="mobileLink"
+          >
+            {t("contactUs")}
+          </NavLink>
+          <br />
+          <Stack direction={"row"} justifyContent="center" spacing={2}>
+            <img
+              src="./image/RuFlag.svg"
+              alt="#"
+              onClick={() => langChange("ru")}
+              className={firstLangClass}
+            />
 
-              <img
-                src="./image/TmFlag.svg"
-                alt="#"
-                onClick={() => langChange("tm")}
-                className={secondLangClass}
-              />
-            </Stack>
+            <img
+              src="./image/TmFlag.svg"
+              alt="#"
+              onClick={() => langChange("tm")}
+              className={secondLangClass}
+            />
           </Stack>
-        </Box>
-      </div>
+        </Stack>
+      </Box>
     </>
   );
   return (
