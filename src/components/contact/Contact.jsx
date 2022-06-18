@@ -2,6 +2,7 @@ import { Container, Grid, Stack } from "@mui/material";
 import React, { useEffect } from "react";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
+import { FullscreenControl, Map, Placemark, YMaps } from "react-yandex-maps";
 import { i18n } from "../../Language/LangConfig";
 import "./contact.css";
 
@@ -123,17 +124,20 @@ const Contact = () => {
                 </Stack>
               </Grid>
             </Grid>
-            <iframe
-              className="mediaMap"
-              src="https://yandex.ru/map-widget/v1/-/CCUJIGBjwC"
-              style={{
-                outline: "none",
-                border: "none",
-                marginBottom: "50px",
-              }}
-              width="100%"
-              height="330"
-            ></iframe>
+            <YMaps>
+              <div>
+                <Map
+                  width={"100%"}
+                  defaultState={{
+                    center: [37.941735, 58.372644],
+                    zoom: 16,
+                  }}
+                >
+                  <Placemark geometry={[37.941735, 58.372644]} />
+                  <FullscreenControl options={{ float: "left" }} />
+                </Map>
+              </div>
+            </YMaps>
           </Grid>
         </Grid>
       </Container>
