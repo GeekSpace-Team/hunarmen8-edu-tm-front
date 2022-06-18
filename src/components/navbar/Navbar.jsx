@@ -110,63 +110,67 @@ const Navbar = () => {
   });
 
   const list = (anchor) => (
-    <Box
-      sx={{
-        width: 250,
-        height: "100vh",
-      }}
-      role="presentation"
-      onClick={toggleDrawer(true)}
-      onKeyDown={toggleDrawer(true)}
-      style={{ background: "#a19f9f" }}
-    >
-      <Stack direction={"column"}>
-        <NavLink
-          to="header"
-          style={{ textTransform: "none" }}
-          className="mobileLink"
+    <>
+      <div className="displayNone">
+        <Box
+          sx={{
+            width: 250,
+            height: "100vh",
+          }}
+          role="presentation"
+          onClick={toggleDrawer(true)}
+          onKeyDown={toggleDrawer(true)}
+          style={{ background: "#a19f9f" }}
         >
-          {t("homePage")}
-        </NavLink>
-        <NavLink
-          to="comeToLearn"
-          style={{ textTransform: "none" }}
-          className="mobileLink"
-        >
-          {t("aboutUs")}
-        </NavLink>
-        <NavLink
-          to="professia"
-          style={{ textTransform: "none" }}
-          className="mobileLink"
-        >
-          {t("raspisaniyaa")}
-        </NavLink>
-        <NavLink
-          to="contact"
-          style={{ textTransform: "none" }}
-          className="mobileLink"
-        >
-          {t("contactUs")}
-        </NavLink>
-        <br />
-        <Stack direction={"row"} justifyContent="center" spacing={2}>
-          <img
-            src="./image/RuFlag.svg"
-            alt="#"
-            onClick={() => langChange("ru")}
-            className={firstLangClass}
-          />
+          <Stack direction={"column"}>
+            <NavLink
+              to="header"
+              style={{ textTransform: "none" }}
+              className="mobileLink"
+            >
+              {t("homePage")}
+            </NavLink>
+            <NavLink
+              to="comeToLearn"
+              style={{ textTransform: "none" }}
+              className="mobileLink"
+            >
+              {t("aboutUs")}
+            </NavLink>
+            <NavLink
+              to="professia"
+              style={{ textTransform: "none" }}
+              className="mobileLink"
+            >
+              {t("raspisaniyaa")}
+            </NavLink>
+            <NavLink
+              to="contact"
+              style={{ textTransform: "none" }}
+              className="mobileLink"
+            >
+              {t("contactUs")}
+            </NavLink>
+            <br />
+            <Stack direction={"row"} justifyContent="center" spacing={2}>
+              <img
+                src="./image/RuFlag.svg"
+                alt="#"
+                onClick={() => langChange("ru")}
+                className={firstLangClass}
+              />
 
-          <img
-            src="./image/TmFlag.svg"
-            alt="#"
-            onClick={() => langChange("tm")}
-            className={secondLangClass}
-          />
-        </Stack>
-      </Stack>
-    </Box>
+              <img
+                src="./image/TmFlag.svg"
+                alt="#"
+                onClick={() => langChange("tm")}
+                className={secondLangClass}
+              />
+            </Stack>
+          </Stack>
+        </Box>
+      </div>
+    </>
   );
   return (
     <>

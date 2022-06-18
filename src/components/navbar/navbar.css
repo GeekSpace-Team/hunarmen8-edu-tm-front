@@ -78,6 +78,9 @@
   color: #000;
   border: none;
 }
+.displayNone {
+  display: none;
+}
 
 .langBtnActive {
   padding: 2px;
@@ -102,6 +105,9 @@
 @media screen and (max-width: 768px) {
   .bgGlass {
     height: 5vh;
+  }
+  .displayNone {
+    display: block;
   }
 
   .head.active {
