@@ -197,11 +197,8 @@ const Contact = () => {
         </Grid>
       </Container>
 
-      <Grid container className="mediamedia">
-        <Grid item lg={6} md={6} xs={12} sm={12} mt={-12}></Grid>
-      </Grid>
       <Grid container>
-        <Grid item lg={12} md={12} xs={12} sm={12} textAlign="center">
+        <Grid item lg={12} md={12} xs={12} mt={1} sm={12} textAlign="center">
           <p>
             <b style={{ fontFamily: "fontMedium" }}>{t("busDirection")}</b>
           </p>

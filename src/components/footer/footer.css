@@ -33,6 +33,9 @@
 .generalStack {
   display: none;
 }
+.FooterTitttle {
+  display: none;
+}
 .mediaStackStart {
   display: none;
 }
@@ -44,6 +47,12 @@
   .footerText {
     padding-bottom: 10px;
     font-size: 16px;
+  }
+  .FooterTitttleT {
+    display: none;
+  }
+  .FooterTitttle {
+    display: block;
   }
   .gorunmeMedia {
     display: none;

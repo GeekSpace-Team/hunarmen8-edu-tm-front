@@ -169,6 +169,18 @@ const Footer = () => {
         </Grid>
         <Grid item lg={12} md={12} sm={12} xs={12} pt={7} textAlign="center">
           <span
+            className="FooterTitttleT"
+            style={{
+              fontFamily: "fontRegular",
+              wordSpacing: "3px",
+              fontSize: "18px",
+            }}
+          >
+            {t("titleeT")}
+          </span>
+        </Grid>
+        <Grid item lg={12} md={12} sm={12} xs={12} pt={7} textAlign="center">
+          <span
             className="FooterTitttle"
             style={{
               fontFamily: "fontRegular",
@@ -177,6 +189,8 @@ const Footer = () => {
             }}
           >
             {t("titlee")}
+            <br />
+            {t("titleee")}
           </span>
         </Grid>
       </Container>

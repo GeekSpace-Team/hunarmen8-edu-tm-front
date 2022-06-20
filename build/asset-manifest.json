@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc0dac85.css",
-    "main.js": "/static/js/main.ead225da.js",
+    "main.css": "/static/css/main.3dc1a06f.css",
+    "main.js": "/static/js/main.6890a8a2.js",
     "static/media/img10.jpg": "/static/media/img10.180f037c6e9dea1f1047.jpg",
     "static/media/img1.JPG": "/static/media/img1.e44850e5c8f072088e1a.JPG",
     "static/media/img18.jpg": "/static/media/img18.052639b0ea3df58e139e.jpg",
@@ -28,11 +28,11 @@
     "static/media/Ubuntu-Bold.ttf": "/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
     "static/media/img13.jpg": "/static/media/img13.78b7a653bb95db7ea513.jpg",
     "index.html": "/index.html",
-    "main.fc0dac85.css.map": "/static/css/main.fc0dac85.css.map",
-    "main.ead225da.js.map": "/static/js/main.ead225da.js.map"
+    "main.3dc1a06f.css.map": "/static/css/main.3dc1a06f.css.map",
+    "main.6890a8a2.js.map": "/static/js/main.6890a8a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc0dac85.css",
-    "static/js/main.ead225da.js"
+    "static/css/main.3dc1a06f.css",
+    "static/js/main.6890a8a2.js"
   ]
 }

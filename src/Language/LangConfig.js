@@ -30,7 +30,10 @@ i18n
           raspisaniyaa: "Okuw hünärleri",
           contactUs: "Habarlaşmak üçin",
           title: "aşgabat şäher häkimliginiň 8-nji hünär-tehniki okuw mekdebi",
-          titlee: "Aşgabat şäher häkimliginiň 8-nji hünär-tehniki okuw mekdebi",
+          titlee: "Aşgabat şäher häkimliginiň 8-nji ",
+          titleee: "hünär-tehniki okuw mekdebi",
+          titleeT:
+            "Aşgabat şäher häkimliginiň 8-nji hünär-tehniki okuw mekdebi",
           adress: "Salgysy:",
           addres: "Aşgabat şäheri, Görogly köçesi, 91",
           addresss: "Aşgabat şäheri,",
@@ -90,8 +93,10 @@ i18n
           contactUs: "Наши контакты",
           title:
             "профессионально-техническая школа №8 хякимлика города ашгабат",
-          titlee:
-            "Профессионально-техническая школа №8 хякимлика города Aшгабат",
+          titlee: "Профессионально-техническая школа №8 ",
+          titleee: "хякимлика города Aшгабат",
+          titleeT:
+            "Профессионально-техническая школа №8 хякимлика города Aшгабат ",
           adress: "Наш адрес:",
           addres: "гор. Ашгабат, улица Героглы, 91",
           addresss: "гор. Ашгабат,",
