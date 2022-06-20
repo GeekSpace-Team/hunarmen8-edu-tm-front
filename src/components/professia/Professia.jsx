@@ -114,26 +114,13 @@ const Professia = () => {
             md={12}
             xs={7.5}
             sm={7.5}
+            mb={4}
             className="proTitleMedia"
           >
             <Stack spacing={0.5}>
               <span className="spanMediaa">{t("okuw")}</span>
               <img src="./image/Line.svg" alt="#" style={{ width: "110px" }} />
             </Stack>
-          </Grid>
-          <Grid container>
-            <Grid item lg={12} md={12} xs={1.5} sm={1.5}></Grid>
-            <Grid item lg={12} md={12} xs={9.5} sm={9.5} mb={4} mt={3}>
-              <span
-                style={{
-                  fontWeight: "600",
-                  fontSize: "17px",
-                  fontFamily: "fontRegular",
-                }}
-              >
-                {t("invitation")}
-              </span>
-            </Grid>
           </Grid>
         </Grid>
         <Grid container className="professia" mt={-2}>

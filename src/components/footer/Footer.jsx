@@ -86,10 +86,18 @@ const Footer = () => {
             <Stack direction="row" spacing={4} mt={4}>
               <Stack direction="column" spacing={4}>
                 {" "}
+                <span className="infoSpan">{t("saytAdress")}</span>
                 <span className="infoSpan">{t("mail")}</span>
                 <span className="infoSpan">{t("phone")}</span>
               </Stack>
               <Stack direction="column" spacing={4}>
+                <a
+                  className="phoneNumbersFooter"
+                  style={{ fontFamily: "fontRegular", fontSize: "16px" }}
+                  href="https://www.hunarmen8.edu.tm"
+                >
+                  www.hunarmen8.edu.tm
+                </a>
                 <a
                   className="phoneNumbersFooter"
                   style={{ fontFamily: "fontRegular", fontSize: "16px" }}
@@ -121,11 +129,19 @@ const Footer = () => {
               </p>
             </Stack>
             <Stack direction="row" className="generalStack">
-              <Stack direction="column" className="firstRowStack" spacing={5}>
+              <Stack direction="column" className="firstRowStack" spacing={3}>
+                <span className="infoSpan">{t("saytAdress")}</span>
                 <span className="infoSpan">{t("mail")}</span>
                 <span className="infoSpan">{t("phone")}</span>
               </Stack>
-              <Stack direction="column" spacing={5} className="secondRowStack">
+              <Stack direction="column" spacing={3} className="secondRowStack">
+                <a
+                  className="phoneNumbersFooter"
+                  style={{ fontFamily: "fontRegular", fontSize: "16px" }}
+                  href="https://www.hunarmen8.edu.tm"
+                >
+                  www.hunarmen8.edu.tm
+                </a>
                 <a
                   className="phoneNumbersFooter"
                   style={{ fontFamily: "fontRegular", fontSize: "16px" }}

@@ -51,11 +51,15 @@
     align-items: center;
     justify-content: center;
   }
+
   .profTitleMedia span {
     font-size: 23px;
     font-family: "fontRegular";
     display: block;
     font-weight: 700;
+  }
+  .profTitleMedia {
+    margin-bottom: 30px;
   }
   .lineContainer {
     margin-top: -13px;

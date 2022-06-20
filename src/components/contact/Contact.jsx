@@ -2,7 +2,16 @@ import { Container, Grid, Stack } from "@mui/material";
 import React, { useEffect } from "react";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
-import { FullscreenControl, Map, Placemark, YMaps } from "react-yandex-maps";
+import {
+  FullscreenControl,
+  ZoomControl,
+  Map,
+  Placemark,
+  TypeSelector,
+  YMaps,
+  SearchControl,
+  TrafficControl,
+} from "react-yandex-maps";
 import { i18n } from "../../Language/LangConfig";
 import "./contact.css";
 
@@ -17,6 +26,14 @@ const Contact = () => {
       i18n.changeLanguage("ru");
     }
   }, []);
+
+  // const placeMark = {
+  //   geometry: [37.941735, 58.372644],
+  //   properties: {
+  //     hintContent: "Это хинт",
+  //     balloonContent: "Это балун",
+  //   },
+  // };
   return (
     <div className="contact">
       <Container maxWidth="lg">
@@ -28,10 +45,17 @@ const Contact = () => {
             </Stack>
             <Stack direction="row" spacing={3} mt={3}>
               <Stack direction="column" spacing={3}>
+                <span style={{ fontWeight: "500" }}>{t("saytAdress")}</span>
                 <span style={{ fontWeight: "500" }}>{t("mail")}</span>
                 <span style={{ fontWeight: "500" }}>{t("phone")}</span>
               </Stack>
               <Stack direction="column" spacing={3}>
+                <a
+                  className="phoneNumbersContact"
+                  href="https://www.hunarmen8.edu.tm"
+                >
+                  www.hunarmen8.edu.tm
+                </a>
                 <a className="phoneNumbersContact" href="mail:bhom8@mail.ru">
                   bhom8@mail.ru
                 </a>
@@ -78,11 +102,19 @@ const Contact = () => {
               </p>
             </Stack>
             <Stack direction="row" className="generalStack">
-              <Stack direction="column" className="firstRowStack" spacing={5}>
+              <Stack direction="column" className="firstRowStack" spacing={3}>
+                <span className="phnimber">{t("saytAdress")}</span>
                 <span className="phnimber">{t("mail")}</span>
                 <span className="phnimber">{t("phone")}</span>
               </Stack>
-              <Stack direction="column" spacing={5} className="secondRowStack">
+              <Stack direction="column" spacing={3} className="secondRowStack">
+                <a
+                  className="phnimber"
+                  style={{ fontFamily: "fontRegular", fontSize: "16px" }}
+                  href="https://www.hunarmen8.edu.tm"
+                >
+                  www.hunarmen8.edu.tm
+                </a>
                 <a
                   className="phnimber"
                   style={{ fontFamily: "fontRegular", fontSize: "16px" }}
@@ -133,8 +165,31 @@ const Contact = () => {
                     zoom: 16,
                   }}
                 >
-                  <Placemark geometry={[37.941735, 58.372644]} />
+                  <Placemark
+                    geometry={[37.941735, 58.372644]}
+                    options={{
+                      openHintHover: true,
+                      iconColor: "#ff0000",
+                      hideIconOnBalloonOpen: false,
+                      balloonContent: "salam",
+                    }}
+                    properties={{
+                      hintContent: "Stack Overflow",
+                      balloonContent: "Stack Overflow на русском",
+                    }}
+                  />
                   <FullscreenControl options={{ float: "left" }} />
+                  <ZoomControl options={{ float: "left" }} />
+                  <SearchControl
+                    options={{
+                      float: "right",
+                    }}
+                  />
+                  <TypeSelector
+                    options={{
+                      float: "right",
+                    }}
+                  />
                 </Map>
               </div>
             </YMaps>
@@ -155,8 +210,9 @@ const Contact = () => {
           <Grid item lg={12} md={12} xs={12} sm={12} textAlign="center" mt={2}>
             <Stack direction="column" className="digitalBus" spacing={2}>
               <span className="mediaListBus">
-                №
-                6,8,10,13,14,15,16,21,22,23,26,30,38,40,49,50,51,56,58,61,62,63
+                № 6,8,10,13,14,15,16,21,22,23,26,
+                <br />
+                30,38,40,49,50,51,56,58,61,62,63
               </span>
               <pre className="mediaListBuss">
                 № 6,8,10,13,14,15,16,21,22,23,26,
