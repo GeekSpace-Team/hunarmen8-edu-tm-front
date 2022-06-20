@@ -27,8 +27,8 @@ const ComeToLearn = () => {
   return (
     <div className="comeToLearn">
       <Grid container>
-        <Grid item lg={4} md={4} sm={12} xs={12}></Grid>
-        <Grid item lg={8} md={8} sm={12} xs={12} mb={9} className="firstWord">
+        <Grid item lg={5} md={5} sm={12} xs={12}></Grid>
+        <Grid item lg={7} md={7} sm={12} xs={12} mb={9} className="firstWord">
           <Stack direction="column" spacing={0.5}>
             <span className="spanMedia">{t("come")}</span>
             <img

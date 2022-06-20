@@ -52,7 +52,7 @@ i18n
             "Konstruktor-modelýer, kompýuter grafikasyny öwrenmek bilen",
           professia9: "Çeper bezeg işlerini ýerine ýetiriji",
           professia10: "Awtomehanik ",
-          professia11: "Kebşirleýji",
+          professia11: "Kebşirleýji ",
           professia12: "(elektro kebşirleme we gaz bilen kebşirleme işleri)",
           professia13: "Geodeziýaçy",
           saytAdress: "Saýt salgysy:",
