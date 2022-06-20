@@ -114,7 +114,7 @@ const ComeToLearn = () => {
                   <li style={{ marginTop: "3px" }}>
                     {t("list5a")} {t("list5b")}
                   </li>
-                  <li style={{ marginTop: "3px" }}>{t("list6")} (3x4),</li>
+                  <li style={{ marginTop: "3px" }}>{t("list6")} (3x4)</li>
                   <li style={{ marginTop: "3px" }}>{t("list7")}</li>
                 </ul>
               </Stack>

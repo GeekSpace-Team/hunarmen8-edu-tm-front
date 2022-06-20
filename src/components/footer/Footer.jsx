@@ -184,8 +184,8 @@ const Footer = () => {
             className="FooterTitttle"
             style={{
               fontFamily: "fontRegular",
-              wordSpacing: "3px",
-              fontSize: "18px",
+              wordSpacing: "0px",
+              fontSize: "17px",
             }}
           >
             {t("titlee")}
