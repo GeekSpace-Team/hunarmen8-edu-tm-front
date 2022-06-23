@@ -36,12 +36,12 @@ const BaseSlider = () => {
             <div className="baseSliderImg">
               <img src={img2} alt="#" />
             </div>
-            <div className="baseSliderImg">
+            {/* <div className="baseSliderImg">
               <img src={img5} alt="#" />
-            </div>
-            <div className="baseSliderImg">
+            </div> */}
+            {/* <div className="baseSliderImg">
               <img src={img6} alt="#" />
-            </div>
+            </div> */}
             <div className="baseSliderImg">
               <img src={img10} alt="#" />
             </div>
@@ -51,12 +51,12 @@ const BaseSlider = () => {
             <div className="baseSliderImg">
               <img src={img16} alt="#" />
             </div>
-            <div className="baseSliderImg">
+            {/* <div className="baseSliderImg">
               <img src={img18} alt="#" />
             </div>
             <div className="baseSliderImg">
               <img src={img19} alt="#" />
-            </div>
+            </div> */}
           </Carousel>
         </div>
       </Container>

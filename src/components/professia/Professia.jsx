@@ -265,12 +265,12 @@ const Professia = () => {
                 <div className="proffImg">
                   <img src={img3} alt="#" />
                 </div>
-                <div className="proffImg">
+                {/* <div className="proffImg">
                   <img src={img4} alt="#" />
-                </div>
-                <div className="proffImg">
+                </div> */}
+                {/* <div className="proffImg">
                   <img src={img7} alt="#" />
-                </div>
+                </div> */}
 
                 <div className="proffImg">
                   <img src={img12} alt="#" />

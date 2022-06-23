@@ -64,9 +64,9 @@ const ComeToLearn = () => {
                 <div className="comeToLearnImg">
                   <img src={img14} alt="#" />
                 </div>
-                <div className="comeToLearnImg">
+                {/* <div className="comeToLearnImg">
                   <img src={img15} alt="#" />
-                </div>
+                </div> */}
               </Carousel>
             </div>
           </Grid>
