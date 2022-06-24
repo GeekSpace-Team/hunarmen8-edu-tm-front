@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 30px;
 }
 .footerDeartment li {
   font-size: 16px;
@@ -33,7 +32,7 @@
 .generalStack {
   display: none;
 }
-.FooterTitttle {
+.qwerty {
   display: none;
 }
 .mediaStackStart {
@@ -51,8 +50,14 @@
   .FooterTitttleT {
     display: none;
   }
-  .FooterTitttle {
+  .qwerty {
     display: block;
+    margin-top: -70px;
+  }
+
+  .footer {
+    height: auto;
+    padding-bottom: 280px;
   }
   .gorunmeMedia {
     display: none;
@@ -73,9 +78,6 @@
   }
   .pnFooter {
     margin-top: 30px;
-  }
-  .footer {
-    padding-bottom: 40px;
   }
 
   .generalStack {

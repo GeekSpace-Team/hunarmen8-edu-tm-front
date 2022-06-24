@@ -100,7 +100,7 @@ const Professia = () => {
       <Container maxWidth="lg">
         <div className="profTitleMedia">
           <Stack direction="column">
-            <span>{t("okuw")}</span>
+            <span>{t("okuw")} :</span>
             <div className="lineContainer">
               <img src="./image/Line.svg" alt="#" style={{ width: "70px" }} />
             </div>
@@ -118,7 +118,7 @@ const Professia = () => {
             className="proTitleMedia"
           >
             <Stack spacing={0.5}>
-              <span className="spanMediaa">{t("okuw")}</span>
+              <span className="spanMediaa">{t("okuw")} :</span>
               <img src="./image/Line.svg" alt="#" style={{ width: "110px" }} />
             </Stack>
           </Grid>
@@ -199,6 +199,10 @@ const Professia = () => {
                           <b>{t("professia15")}</b>
                         </p>
                         <hr />
+                        <p>
+                          <b>{t("professia13")}</b>
+                        </p>
+                        <hr />
                       </Stack>
                     </Grid>
                   </TabPanel>
@@ -232,10 +236,6 @@ const Professia = () => {
                         <hr />
                         <p>
                           <b>{t("professia10")}</b>
-                        </p>
-                        <hr />
-                        <p>
-                          <b>{t("professia13")}</b>
                         </p>
                         <hr />
                         <p>
