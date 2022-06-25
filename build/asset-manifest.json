@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9342cf49.css",
+    "main.js": "/static/js/main.6a3c64ce.js",
+    "static/media/img10.jpg": "/static/media/img10.180f037c6e9dea1f1047.jpg",
+    "static/media/img1.JPG": "/static/media/img1.e44850e5c8f072088e1a.JPG",
+    "static/media/img18.jpg": "/static/media/img18.052639b0ea3df58e139e.jpg",
+    "static/media/img16.jpg": "/static/media/img16.be0f445e6f9c3e59f938.jpg",
+    "static/media/img11.jpg": "/static/media/img11.63ad27ced1a8be808d7d.jpg",
+    "static/media/img19.jpg": "/static/media/img19.8e8706e4581d5f5ce5b4.jpg",
+    "static/media/img9.jpg": "/static/media/img9.03cd3d113715240b46a9.jpg",
+    "static/media/img2.jpg": "/static/media/img2.d746b589a5ada5c84311.jpg",
+    "static/media/img5.jpg": "/static/media/img5.a5f5564e094dfbb90052.jpg",
+    "static/media/img6.jpg": "/static/media/img6.4a96a7d0769a22610465.jpg",
+    "static/media/img14.jpg": "/static/media/img14.2a3352a214cd3795ce27.jpg",
+    "static/media/img4.jpg": "/static/media/img4.95cdae022dfdce1eecc6.jpg",
+    "static/media/img3.jpg": "/static/media/img3.9d84fe9def028fdffd55.jpg",
+    "static/media/img12.jpg": "/static/media/img12.6f81d8368fbdcd418368.jpg",
+    "static/media/Ubuntu-Light.ttf": "/static/media/Ubuntu-Light.0dd2d5986e2731a16ee7.ttf",
+    "static/media/Ubuntu-LightItalic.ttf": "/static/media/Ubuntu-LightItalic.643c0a5c4ac0440c45e5.ttf",
+    "static/media/img7.jpg": "/static/media/img7.41b72b42884af8e35259.jpg",
+    "static/media/Ubuntu-Italic.ttf": "/static/media/Ubuntu-Italic.fbb3310412795b02afc4.ttf",
+    "static/media/Ubuntu-MediumItalic.ttf": "/static/media/Ubuntu-MediumItalic.d68d789a6be6e034d129.ttf",
+    "static/media/img15.jpg": "/static/media/img15.92c185d951ad38d82b11.jpg",
+    "static/media/Ubuntu-Regular.ttf": "/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/Ubuntu-Medium.ttf": "/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
+    "static/media/Ubuntu-BoldItalic.ttf": "/static/media/Ubuntu-BoldItalic.6fe54aaa592aa54a8c88.ttf",
+    "static/media/Ubuntu-Bold.ttf": "/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/img13.jpg": "/static/media/img13.78b7a653bb95db7ea513.jpg",
+    "index.html": "/index.html",
+    "main.9342cf49.css.map": "/static/css/main.9342cf49.css.map",
+    "main.6a3c64ce.js.map": "/static/js/main.6a3c64ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9342cf49.css",
+    "static/js/main.6a3c64ce.js"
+  ]
+}
